@@ -1,0 +1,144 @@
+c:\users\leo\documents\visual studio 2013\Projects\Profiling\Profiling\bin\Debug\Profiling.exe.config
+c:\users\leo\documents\visual studio 2013\Projects\Profiling\Profiling\bin\Debug\Profiling.exe
+c:\users\leo\documents\visual studio 2013\Projects\Profiling\Profiling\bin\Debug\Profiling.pdb
+c:\users\leo\documents\visual studio 2013\Projects\Profiling\Profiling\obj\Debug\Profiling.csprojResolveAssemblyReference.cache
+c:\users\leo\documents\visual studio 2013\Projects\Profiling\Profiling\obj\Debug\Profiling.Form1.resources
+c:\users\leo\documents\visual studio 2013\Projects\Profiling\Profiling\obj\Debug\Profiling.Properties.Resources.resources
+c:\users\leo\documents\visual studio 2013\Projects\Profiling\Profiling\obj\Debug\Profiling.csproj.GenerateResource.Cache
+c:\users\leo\documents\visual studio 2013\Projects\Profiling\Profiling\obj\Debug\Profiling.exe
+c:\users\leo\documents\visual studio 2013\Projects\Profiling\Profiling\obj\Debug\Profiling.pdb
+c:\users\leo\documents\visual studio 2013\Projects\Profiling\Profiling\obj\Debug\Profiling.exe.licenses
+C:\Users\Leo\Documents\Visual Studio 2013\Projects\Profiling\Profiling\obj\Debug\Profiling.GUI.About.resources
+C:\Users\Leo\Documents\Visual Studio 2013\Projects\Profiling\Profiling\bin\Debug\System.Data.DataSetExtensions.dll
+C:\Users\Leo\Documents\Visual Studio 2013\Projects\Profiling\Profiling\bin\Debug\System.Data.dll
+C:\Users\Leo\Documents\Visual Studio 2013\Projects\Profiling\Profiling\bin\Debug\System.Deployment.dll
+C:\Users\Leo\Documents\Visual Studio 2013\Projects\Profiling\Profiling\bin\Debug\System.dll
+C:\Users\Leo\Documents\Visual Studio 2013\Projects\Profiling\Profiling\bin\Debug\System.Drawing.dll
+C:\Users\Leo\Documents\Visual Studio 2013\Projects\Profiling\Profiling\bin\Debug\System.Windows.Forms.DataVisualization.dll
+C:\Users\Leo\Documents\Visual Studio 2013\Projects\Profiling\Profiling\bin\Debug\System.Windows.Forms.dll
+C:\Users\Leo\Documents\Visual Studio 2013\Projects\Profiling\Profiling\bin\Debug\System.Xml.dll
+C:\Users\Leo\Documents\Visual Studio 2013\Projects\Profiling\Profiling\bin\Debug\System.Xml.Linq.dll
+C:\Users\Leo\Documents\Visual Studio 2013\Projects\Profiling\Profiling\bin\Debug\Telerik.WinControls.dll
+C:\Users\Leo\Documents\Visual Studio 2013\Projects\Profiling\Profiling\bin\Debug\Telerik.WinControls.UI.dll
+C:\Users\Leo\Documents\Visual Studio 2013\Projects\Profiling\Profiling\bin\Debug\TelerikCommon.dll
+C:\Users\Leo\Documents\Visual Studio 2013\Projects\Profiling\Profiling\bin\Debug\Telerik.WinControls.xml
+C:\Users\Leo\Documents\Visual Studio 2013\Projects\Profiling\Profiling\bin\Debug\Telerik.WinControls.UI.xml
+C:\Users\123\Desktop\Новая папка (3)\Profiling\bin\Debug\Profiling.exe.config
+C:\Users\123\Desktop\Новая папка (3)\Profiling\obj\Debug\Profiling.exe
+C:\Users\123\Desktop\Новая папка (3)\Profiling\obj\Debug\Profiling.pdb
+C:\Users\123\Desktop\Новая папка (3)\Profiling\bin\Debug\Profiling.exe
+C:\Users\123\Desktop\Новая папка (3)\Profiling\bin\Debug\Profiling.pdb
+C:\Users\123\Desktop\Новая папка (3)\Profiling\bin\Debug\System.Data.DataSetExtensions.dll
+C:\Users\123\Desktop\Новая папка (3)\Profiling\bin\Debug\System.Data.dll
+C:\Users\123\Desktop\Новая папка (3)\Profiling\bin\Debug\System.Deployment.dll
+C:\Users\123\Desktop\Новая папка (3)\Profiling\bin\Debug\System.dll
+C:\Users\123\Desktop\Новая папка (3)\Profiling\bin\Debug\System.Drawing.dll
+C:\Users\123\Desktop\Новая папка (3)\Profiling\bin\Debug\System.Windows.Forms.DataVisualization.dll
+C:\Users\123\Desktop\Новая папка (3)\Profiling\bin\Debug\System.Windows.Forms.dll
+C:\Users\123\Desktop\Новая папка (3)\Profiling\bin\Debug\System.Xml.dll
+C:\Users\123\Desktop\Новая папка (3)\Profiling\bin\Debug\System.Xml.Linq.dll
+C:\Users\123\Desktop\Новая папка (3)\Profiling\bin\Debug\Telerik.WinControls.xml
+C:\Users\123\Desktop\Новая папка (3)\Profiling\bin\Debug\Telerik.WinControls.UI.xml
+C:\Users\123\Desktop\Новая папка (3)\Profiling\obj\Debug\Profiling.csprojResolveAssemblyReference.cache
+C:\Users\123\Desktop\Новая папка (3)\Profiling\obj\Debug\Profiling.Form1.resources
+C:\Users\123\Desktop\Новая папка (3)\Profiling\obj\Debug\Profiling.GUI.About.resources
+C:\Users\123\Desktop\Новая папка (3)\Profiling\obj\Debug\Profiling.Properties.Resources.resources
+C:\Users\123\Desktop\Новая папка (3)\Profiling\obj\Debug\Profiling.csproj.GenerateResource.Cache
+C:\Users\123\Desktop\Новая папка (3)\Profiling\obj\Debug\Profiling.exe.licenses
+C:\Users\Станислав\Desktop\Магистрская\Profiling\bin\Debug\Profiling.exe.config
+C:\Users\Станислав\Desktop\Магистрская\Profiling\obj\Debug\Profiling.exe
+C:\Users\Станислав\Desktop\Магистрская\Profiling\obj\Debug\Profiling.pdb
+C:\Users\Станислав\Desktop\Магистрская\Profiling\obj\Debug\Profiling.csprojResolveAssemblyReference.cache
+C:\Users\Станислав\Desktop\Магистрская\Profiling\obj\Debug\Profiling.Form1.resources
+C:\Users\Станислав\Desktop\Магистрская\Profiling\obj\Debug\Profiling.GUI.About.resources
+C:\Users\Станислав\Desktop\Магистрская\Profiling\obj\Debug\Profiling.Properties.Resources.resources
+C:\Users\Станислав\Desktop\Магистрская\Profiling\obj\Debug\Profiling.csproj.GenerateResource.Cache
+C:\Users\Станислав\Desktop\Магистрская\Profiling\obj\Debug\Profiling.exe.licenses
+C:\Users\Станислав\Desktop\Магистрская\Profiling\bin\Debug\Profiling.exe
+C:\Users\Станислав\Desktop\Магистрская\Profiling\bin\Debug\Profiling.pdb
+C:\Users\Станислав\Desktop\Магистрская\Profiling\bin\Debug\System.Data.DataSetExtensions.dll
+C:\Users\Станислав\Desktop\Магистрская\Profiling\bin\Debug\System.Data.dll
+C:\Users\Станислав\Desktop\Магистрская\Profiling\bin\Debug\System.Deployment.dll
+C:\Users\Станислав\Desktop\Магистрская\Profiling\bin\Debug\System.dll
+C:\Users\Станислав\Desktop\Магистрская\Profiling\bin\Debug\System.Drawing.dll
+C:\Users\Станислав\Desktop\Магистрская\Profiling\bin\Debug\System.Windows.Forms.DataVisualization.dll
+C:\Users\Станислав\Desktop\Магистрская\Profiling\bin\Debug\System.Windows.Forms.dll
+C:\Users\Станислав\Desktop\Магистрская\Profiling\bin\Debug\System.Xml.dll
+C:\Users\Станислав\Desktop\Магистрская\Profiling\bin\Debug\System.Xml.Linq.dll
+C:\Users\Станислав\Desktop\Магистрская\Profiling\bin\Debug\Telerik.WinControls.dll
+C:\Users\Станислав\Desktop\Магистрская\Profiling\bin\Debug\Telerik.WinControls.UI.dll
+C:\Users\Станислав\Desktop\Магистрская\Profiling\bin\Debug\TelerikCommon.dll
+C:\Users\Станислав\Desktop\Магистрская\Profiling\bin\Debug\Telerik.WinControls.xml
+C:\Users\Станислав\Desktop\Магистрская\Profiling\bin\Debug\Telerik.WinControls.UI.xml
+C:\Users\123\Desktop\Магистрская после коррективов\Profiling\bin\Debug\Profiling.exe.config
+C:\Users\123\Desktop\Магистрская после коррективов\Profiling\obj\Debug\Profiling.exe
+C:\Users\123\Desktop\Магистрская после коррективов\Profiling\obj\Debug\Profiling.pdb
+C:\Users\123\Desktop\Магистрская после коррективов\Profiling\bin\Debug\Profiling.exe
+C:\Users\123\Desktop\Магистрская после коррективов\Profiling\bin\Debug\Profiling.pdb
+C:\Users\123\Desktop\Магистрская после коррективов\Profiling\bin\Debug\System.Data.DataSetExtensions.dll
+C:\Users\123\Desktop\Магистрская после коррективов\Profiling\bin\Debug\System.Data.dll
+C:\Users\123\Desktop\Магистрская после коррективов\Profiling\bin\Debug\System.Deployment.dll
+C:\Users\123\Desktop\Магистрская после коррективов\Profiling\bin\Debug\System.dll
+C:\Users\123\Desktop\Магистрская после коррективов\Profiling\bin\Debug\System.Drawing.dll
+C:\Users\123\Desktop\Магистрская после коррективов\Profiling\bin\Debug\System.Windows.Forms.DataVisualization.dll
+C:\Users\123\Desktop\Магистрская после коррективов\Profiling\bin\Debug\System.Windows.Forms.dll
+C:\Users\123\Desktop\Магистрская после коррективов\Profiling\bin\Debug\System.Xml.dll
+C:\Users\123\Desktop\Магистрская после коррективов\Profiling\bin\Debug\System.Xml.Linq.dll
+C:\Users\123\Desktop\Магистрская после коррективов\Profiling\bin\Debug\Telerik.WinControls.xml
+C:\Users\123\Desktop\Магистрская после коррективов\Profiling\bin\Debug\Telerik.WinControls.UI.xml
+C:\Users\123\Desktop\Магистрская после коррективов\Profiling\obj\Debug\Profiling.csprojResolveAssemblyReference.cache
+C:\Users\123\Desktop\Магистрская после коррективов\Profiling\obj\Debug\Profiling.Form1.resources
+C:\Users\123\Desktop\Магистрская после коррективов\Profiling\obj\Debug\Profiling.GUI.About.resources
+C:\Users\123\Desktop\Магистрская после коррективов\Profiling\obj\Debug\Profiling.Properties.Resources.resources
+C:\Users\123\Desktop\Магистрская после коррективов\Profiling\obj\Debug\Profiling.csproj.GenerateResource.Cache
+C:\Users\123\Desktop\Магистрская после коррективов\Profiling\obj\Debug\Profiling.exe.licenses
+C:\Users\Станислав\Desktop\Магистрская после коррективов\Profiling\bin\Debug\Profiling.exe.config
+C:\Users\Станислав\Desktop\Магистрская после коррективов\Profiling\obj\Debug\Profiling.exe
+C:\Users\Станислав\Desktop\Магистрская после коррективов\Profiling\obj\Debug\Profiling.pdb
+C:\Users\Leo\Desktop\Магистрская после коррективов\Profiling\bin\Debug\Profiling.exe.config
+C:\Users\Leo\Desktop\Магистрская после коррективов\Profiling\obj\Debug\Profiling.exe
+C:\Users\Leo\Desktop\Магистрская после коррективов\Profiling\obj\Debug\Profiling.pdb
+C:\ProfilingSystem\Profiling\bin\Debug\Profiling.exe.config
+C:\ProfilingSystem\Profiling\obj\Debug\Profiling.exe
+C:\ProfilingSystem\Profiling\obj\Debug\Profiling.pdb
+C:\ProfilingSystem\Profiling\bin\Debug\Profiling.exe
+C:\ProfilingSystem\Profiling\bin\Debug\Profiling.pdb
+C:\ProfilingSystem\Profiling\bin\Debug\System.Data.DataSetExtensions.dll
+C:\ProfilingSystem\Profiling\bin\Debug\System.Data.dll
+C:\ProfilingSystem\Profiling\bin\Debug\System.Deployment.dll
+C:\ProfilingSystem\Profiling\bin\Debug\System.dll
+C:\ProfilingSystem\Profiling\bin\Debug\System.Drawing.dll
+C:\ProfilingSystem\Profiling\bin\Debug\System.Windows.Forms.DataVisualization.dll
+C:\ProfilingSystem\Profiling\bin\Debug\System.Windows.Forms.dll
+C:\ProfilingSystem\Profiling\bin\Debug\System.Xml.dll
+C:\ProfilingSystem\Profiling\bin\Debug\System.Xml.Linq.dll
+C:\ProfilingSystem\Profiling\bin\Debug\Telerik.WinControls.xml
+C:\ProfilingSystem\Profiling\bin\Debug\Telerik.WinControls.UI.xml
+C:\ProfilingSystem\Profiling\obj\Debug\Profiling.csprojResolveAssemblyReference.cache
+C:\ProfilingSystem\Profiling\obj\Debug\Profiling.Form1.resources
+C:\ProfilingSystem\Profiling\obj\Debug\Profiling.GUI.About.resources
+C:\ProfilingSystem\Profiling\obj\Debug\Profiling.Properties.Resources.resources
+C:\ProfilingSystem\Profiling\obj\Debug\Profiling.csproj.GenerateResource.Cache
+C:\ProfilingSystem\Profiling\obj\Debug\Profiling.exe.licenses
+C:\Users\Leo\Source\Repos\ProfilingSystem\Profiling\bin\Debug\Profiling.exe.config
+C:\Users\Leo\Source\Repos\ProfilingSystem\Profiling\obj\Debug\Profiling.exe
+C:\Users\Leo\Source\Repos\ProfilingSystem\Profiling\obj\Debug\Profiling.pdb
+C:\Users\Leo\Source\Repos\ProfilingSystem\Profiling\bin\Debug\Profiling.exe
+C:\Users\Leo\Source\Repos\ProfilingSystem\Profiling\bin\Debug\Profiling.pdb
+C:\Users\Leo\Source\Repos\ProfilingSystem\Profiling\bin\Debug\System.Data.DataSetExtensions.dll
+C:\Users\Leo\Source\Repos\ProfilingSystem\Profiling\bin\Debug\System.Data.dll
+C:\Users\Leo\Source\Repos\ProfilingSystem\Profiling\bin\Debug\System.Deployment.dll
+C:\Users\Leo\Source\Repos\ProfilingSystem\Profiling\bin\Debug\System.dll
+C:\Users\Leo\Source\Repos\ProfilingSystem\Profiling\bin\Debug\System.Drawing.dll
+C:\Users\Leo\Source\Repos\ProfilingSystem\Profiling\bin\Debug\System.Windows.Forms.DataVisualization.dll
+C:\Users\Leo\Source\Repos\ProfilingSystem\Profiling\bin\Debug\System.Windows.Forms.dll
+C:\Users\Leo\Source\Repos\ProfilingSystem\Profiling\bin\Debug\System.Xml.dll
+C:\Users\Leo\Source\Repos\ProfilingSystem\Profiling\bin\Debug\System.Xml.Linq.dll
+C:\Users\Leo\Source\Repos\ProfilingSystem\Profiling\bin\Debug\Telerik.WinControls.xml
+C:\Users\Leo\Source\Repos\ProfilingSystem\Profiling\bin\Debug\Telerik.WinControls.UI.xml
+C:\Users\Leo\Source\Repos\ProfilingSystem\Profiling\obj\Debug\Profiling.csprojResolveAssemblyReference.cache
+C:\Users\Leo\Source\Repos\ProfilingSystem\Profiling\obj\Debug\Profiling.Form1.resources
+C:\Users\Leo\Source\Repos\ProfilingSystem\Profiling\obj\Debug\Profiling.GUI.About.resources
+C:\Users\Leo\Source\Repos\ProfilingSystem\Profiling\obj\Debug\Profiling.Properties.Resources.resources
+C:\Users\Leo\Source\Repos\ProfilingSystem\Profiling\obj\Debug\Profiling.csproj.GenerateResource.Cache
+C:\Users\Leo\Source\Repos\ProfilingSystem\Profiling\obj\Debug\Profiling.exe.licenses
