@@ -145,3 +145,5 @@ C:\Users\Leo\Source\Repos\ProfilingSystem\Profiling\obj\Debug\Profiling.exe.lice
 C:\Users\Leo\Source\Repos\ProfilingSystem\Profiling\bin\Debug\Telerik.WinControls.dll
 C:\Users\Leo\Source\Repos\ProfilingSystem\Profiling\bin\Debug\Telerik.WinControls.UI.dll
 C:\Users\Leo\Source\Repos\ProfilingSystem\Profiling\bin\Debug\TelerikCommon.dll
+C:\Users\Leo\Source\Repos\ProfilingSystem\Profiling\obj\Debug\Profiling.GUI.Theory.resources
+C:\Users\Leo\Source\Repos\ProfilingSystem\Profiling\obj\Debug\Profiling.GUI.ShellFrm.resources
