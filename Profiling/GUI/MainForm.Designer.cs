@@ -494,8 +494,6 @@
             // 
             // radMenuItem1
             // 
-            this.radMenuItem1.AccessibleDescription = "Файл";
-            this.radMenuItem1.AccessibleName = "Файл";
             this.radMenuItem1.Items.AddRange(new Telerik.WinControls.RadItem[] {
             this.radMenuItem6});
             this.radMenuItem1.Name = "radMenuItem1";
@@ -503,16 +501,12 @@
             // 
             // radMenuItem6
             // 
-            this.radMenuItem6.AccessibleDescription = "Выход";
-            this.radMenuItem6.AccessibleName = "Выход";
             this.radMenuItem6.Name = "radMenuItem6";
             this.radMenuItem6.Text = "Выход";
             this.radMenuItem6.Click += new System.EventHandler(this.radMenuItem6_Click);
             // 
             // radMenuItem2
             // 
-            this.radMenuItem2.AccessibleDescription = "Сервис";
-            this.radMenuItem2.AccessibleName = "Сервис";
             this.radMenuItem2.Items.AddRange(new Telerik.WinControls.RadItem[] {
             this.radMenuItem5,
             this.radMenuItem7,
@@ -523,38 +517,29 @@
             // 
             // radMenuItem5
             // 
-            this.radMenuItem5.AccessibleDescription = "Сохранить изображение";
-            this.radMenuItem5.AccessibleName = "Сохранить изображение";
             this.radMenuItem5.Name = "radMenuItem5";
             this.radMenuItem5.Text = "Сохранить изображение";
             this.radMenuItem5.Click += new System.EventHandler(this.saveChart_Click);
             // 
             // radMenuItem7
             // 
-            this.radMenuItem7.AccessibleDescription = "Сохранить результат";
-            this.radMenuItem7.AccessibleName = "Сохранить результат";
             this.radMenuItem7.Name = "radMenuItem7";
             this.radMenuItem7.Text = "Сохранить результат";
             this.radMenuItem7.Click += new System.EventHandler(this.saveResult_Click);
             // 
             // radMenuSeparatorItem1
             // 
-            this.radMenuSeparatorItem1.AccessibleDescription = "radMenuSeparatorItem1";
-            this.radMenuSeparatorItem1.AccessibleName = "radMenuSeparatorItem1";
             this.radMenuSeparatorItem1.Name = "radMenuSeparatorItem1";
             this.radMenuSeparatorItem1.Text = "radMenuSeparatorItem1";
+            this.radMenuSeparatorItem1.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // radMenuItem8
             // 
-            this.radMenuItem8.AccessibleDescription = "Модель диска Solidworks";
-            this.radMenuItem8.AccessibleName = "Модель диска Solidworks";
             this.radMenuItem8.Name = "radMenuItem8";
             this.radMenuItem8.Text = "Модель диска Solidworks";
             // 
             // radMenuItem3
             // 
-            this.radMenuItem3.AccessibleDescription = "Справка";
-            this.radMenuItem3.AccessibleName = "Справка";
             this.radMenuItem3.Items.AddRange(new Telerik.WinControls.RadItem[] {
             this.radMenuItem4});
             this.radMenuItem3.Name = "radMenuItem3";
@@ -562,8 +547,6 @@
             // 
             // radMenuItem4
             // 
-            this.radMenuItem4.AccessibleDescription = "О программе";
-            this.radMenuItem4.AccessibleName = "О программе";
             this.radMenuItem4.Name = "radMenuItem4";
             this.radMenuItem4.Text = "О программе";
             this.radMenuItem4.Click += new System.EventHandler(this.radMenuItem4_Click);
@@ -580,8 +563,6 @@
             // 
             // radLabelElement1
             // 
-            this.radLabelElement1.AccessibleDescription = "Добро пожаловать!";
-            this.radLabelElement1.AccessibleName = "Добро пожаловать!";
             this.radLabelElement1.Name = "radLabelElement1";
             this.radStatusStrip1.SetSpring(this.radLabelElement1, false);
             this.radLabelElement1.Text = "Добро пожаловать!";
@@ -618,8 +599,6 @@
             // 
             // commandBarButton2
             // 
-            this.commandBarButton2.AccessibleDescription = "commandBarButton2";
-            this.commandBarButton2.AccessibleName = "commandBarButton2";
             this.commandBarButton2.AutoSize = false;
             this.commandBarButton2.Bounds = new System.Drawing.Rectangle(0, 0, 36, 36);
             this.commandBarButton2.DisplayName = "commandBarButton2";
@@ -630,8 +609,6 @@
             // 
             // commandBarButton3
             // 
-            this.commandBarButton3.AccessibleDescription = "commandBarButton3";
-            this.commandBarButton3.AccessibleName = "commandBarButton3";
             this.commandBarButton3.AutoSize = false;
             this.commandBarButton3.Bounds = new System.Drawing.Rectangle(0, 0, 36, 36);
             this.commandBarButton3.DisplayName = "commandBarButton3";
@@ -650,8 +627,6 @@
             // 
             // commandBarButton4
             // 
-            this.commandBarButton4.AccessibleDescription = "commandBarButton4";
-            this.commandBarButton4.AccessibleName = "commandBarButton4";
             this.commandBarButton4.AutoSize = false;
             this.commandBarButton4.Bounds = new System.Drawing.Rectangle(0, 0, 36, 36);
             this.commandBarButton4.DisplayName = "commandBarButton4";

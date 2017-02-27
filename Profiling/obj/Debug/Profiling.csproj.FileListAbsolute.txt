@@ -142,3 +142,6 @@ C:\Users\Leo\Source\Repos\ProfilingSystem\Profiling\obj\Debug\Profiling.GUI.Abou
 C:\Users\Leo\Source\Repos\ProfilingSystem\Profiling\obj\Debug\Profiling.Properties.Resources.resources
 C:\Users\Leo\Source\Repos\ProfilingSystem\Profiling\obj\Debug\Profiling.csproj.GenerateResource.Cache
 C:\Users\Leo\Source\Repos\ProfilingSystem\Profiling\obj\Debug\Profiling.exe.licenses
+C:\Users\Leo\Source\Repos\ProfilingSystem\Profiling\bin\Debug\Telerik.WinControls.dll
+C:\Users\Leo\Source\Repos\ProfilingSystem\Profiling\bin\Debug\Telerik.WinControls.UI.dll
+C:\Users\Leo\Source\Repos\ProfilingSystem\Profiling\bin\Debug\TelerikCommon.dll

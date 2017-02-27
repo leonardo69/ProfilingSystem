@@ -131,6 +131,251 @@
             The event was caused by a Sync operation.
             </summary>
         </member>
+        <member name="F:Telerik.WinControls.Export.DataType.String">
+            <summary>
+            String
+            </summary>
+        </member>
+        <member name="F:Telerik.WinControls.Export.DataType.Number">
+            <summary>
+            Number
+            </summary>
+        </member>
+        <member name="F:Telerik.WinControls.Export.DataType.DateTime">
+            <summary>
+            DateTime
+            </summary>
+        </member>
+        <member name="F:Telerik.WinControls.Export.DataType.Boolean">
+            <summary>
+            Boolean
+            </summary>
+        </member>
+        <member name="F:Telerik.WinControls.Export.DataType.Null">
+            <summary>
+            Null
+            </summary>
+        </member>
+        <member name="F:Telerik.WinControls.Export.DataType.Other">
+            <summary>
+            Other
+            </summary>
+        </member>
+        <member name="F:Telerik.WinControls.Export.DataType.Empty">
+            <summary>
+            Used when exporting null value.
+            </summary>
+        </member>
+        <member name="F:Telerik.WinControls.UI.Export.DisplayFormatType.None">
+            <summary>
+            General format
+            </summary>
+        </member>
+        <member name="F:Telerik.WinControls.UI.Export.DisplayFormatType.Text">
+            <summary>
+            Displays anything as text (i.e. Left aligned without formatting)
+            </summary>
+        </member>
+        <member name="F:Telerik.WinControls.UI.Export.DisplayFormatType.Fixed">
+            <summary>
+            Displays numeric values with two fixed decimals 
+            </summary>
+        </member>
+        <member name="F:Telerik.WinControls.UI.Export.DisplayFormatType.Standard">
+            <summary>
+            Displays numeric values with two fixed decimals and digit grouping
+            </summary>
+        </member>
+        <member name="F:Telerik.WinControls.UI.Export.DisplayFormatType.Percent">
+            <summary>
+            Displays numeric values as percentage values
+            </summary>
+        </member>
+        <member name="F:Telerik.WinControls.UI.Export.DisplayFormatType.Scientific">
+            <summary>
+            Displays numeric values in scientific notation
+            </summary>
+        </member>
+        <member name="F:Telerik.WinControls.UI.Export.DisplayFormatType.GeneralDate">
+            <summary>
+            Displays numeric or date values as formatted date values
+            </summary>
+        </member>
+        <member name="F:Telerik.WinControls.UI.Export.DisplayFormatType.ShortDate">
+            <summary>
+            Displays numeric or date values as short date format
+            </summary>
+        </member>
+        <member name="F:Telerik.WinControls.UI.Export.DisplayFormatType.MediumDate">
+            <summary>
+            Displays numeric or date values as medium date format
+            </summary>
+        </member>
+        <member name="F:Telerik.WinControls.UI.Export.DisplayFormatType.LongDate">
+            <summary>
+            Displays numeric or date values as long date format
+            </summary>
+        </member>
+        <member name="F:Telerik.WinControls.UI.Export.DisplayFormatType.Currency">
+            <summary>
+            Displays numeric date as currency
+            </summary>
+        </member>
+        <member name="F:Telerik.WinControls.UI.Export.DisplayFormatType.LongTime">
+            <summary>
+            Displays numeric or date values in a long time format
+            </summary>
+        </member>
+        <member name="F:Telerik.WinControls.UI.Export.DisplayFormatType.MediumTime">
+            <summary>
+            Displays numeric or date values in a medium time format
+            </summary>
+        </member>
+        <member name="F:Telerik.WinControls.UI.Export.DisplayFormatType.ShortTime">
+            <summary>
+            Displays numeric or date values in a short time format
+            </summary>
+        </member>
+        <member name="F:Telerik.WinControls.UI.Export.DisplayFormatType.Custom">
+            <summary>
+            Custom defined format
+            </summary>
+        </member>
+        <member name="T:Telerik.WinControls.UI.Export.ContentType">
+            <summary>
+            The cell content type
+            </summary>
+        </member>
+        <member name="F:Telerik.WinControls.UI.Export.ContentType.None">
+            <summary>
+            Cell does not contain anything
+            </summary>
+        </member>
+        <member name="F:Telerik.WinControls.UI.Export.ContentType.String">
+            <summary>
+            Cell contains a string
+            </summary>
+        </member>
+        <member name="F:Telerik.WinControls.UI.Export.ContentType.Number">
+            <summary>
+            Cell contains a number
+            </summary>
+        </member>
+        <member name="F:Telerik.WinControls.UI.Export.ContentType.DateTime">
+            <summary>
+            Cell contains a DateTime value
+            </summary>
+        </member>
+        <member name="F:Telerik.WinControls.UI.Export.ContentType.Boolean">
+            <summary>
+            Cell contains a bool value
+            </summary>
+        </member>
+        <member name="F:Telerik.WinControls.UI.Export.ContentType.UnresolvedValue">
+            <summary>
+            Cell contains a formula
+            </summary>
+            <summary>
+            Cell contains a formula which cannot be resolved
+            </summary>
+        </member>
+        <member name="P:Telerik.WinControls.Export.IGridViewSpreadStreamExportCellInfo.RowType">
+            <summary>
+            Gets or sets the type of the grid row.
+            </summary>
+            <value>The type of the row.</value>
+        </member>
+        <member name="P:Telerik.WinControls.Export.IGridViewSpreadStreamExportCellInfo.RowIndex">
+            <summary>
+            Gets or sets the index of the grid row.
+            </summary>
+            <value>The index of the row.</value>
+        </member>
+        <member name="P:Telerik.WinControls.Export.IGridViewSpreadStreamExportCellInfo.ColumnType">
+            <summary>
+            Gets or sets the type of the grid column.
+            </summary>
+            <value>The type of the column.</value>
+        </member>
+        <member name="P:Telerik.WinControls.Export.IGridViewSpreadStreamExportCellInfo.ColumnIndex">
+            <summary>
+            Gets or sets the index of the grid column.
+            </summary>
+            <value>The index of the column.</value>
+        </member>
+        <member name="P:Telerik.WinControls.Export.IGridViewSpreadStreamExportCellInfo.CellStyleInfo">
+            <summary>
+            Gets or sets the cell style info.
+            </summary>
+            <value>The cell style info.</value>
+        </member>
+        <member name="M:Telerik.WinControls.Export.IPdfEditor.SetLinearGradient(System.Int32,System.Drawing.PointF,System.Drawing.PointF,System.Drawing.Color,System.Drawing.Color,System.Drawing.Color,System.Drawing.Color)">
+            <summary>
+            This creates a linear gradient depending on number of colors needed
+            </summary>
+        </member>
+        <member name="M:Telerik.WinControls.Export.IPdfEditor.CreateMatrixPosition(System.Double,System.Double)">
+            <summary>
+            this.editor.Position = savePosition;
+            </summary>
+            <param name="x">Horizontal offset that will be set as new Matrix position</param>
+            <param name="y">Vertical offset that will be set as new Matrix position</param>
+        </member>
+        <member name="T:Telerik.WinControls.Export.SpreadExportFormat">
+            <summary>
+            Enum listing the export formats supported by RadSpreadProessing.
+            </summary>
+        </member>
+        <member name="F:Telerik.WinControls.Export.SpreadExportFormat.Xlsx">
+            <summary>
+            XLSX format
+            </summary>
+        </member>
+        <member name="F:Telerik.WinControls.Export.SpreadExportFormat.Pdf">
+            <summary>
+            PDF format
+            </summary>
+        </member>
+        <member name="F:Telerik.WinControls.Export.SpreadExportFormat.Csv">
+            <summary>
+            CSV format
+            </summary>
+        </member>
+        <member name="F:Telerik.WinControls.Export.SpreadExportFormat.Txt">
+            <summary>
+            Txt format
+            </summary>
+        </member>
+        <member name="T:Telerik.WinControls.Export.SpreadStreamExportFormat">
+            <summary>
+            Enum listing the export formats supported by RadSpreadStreamProessing.
+            </summary>
+        </member>
+        <member name="F:Telerik.WinControls.Export.SpreadStreamExportFormat.Xlsx">
+            <summary>
+            XLSX format
+            </summary>
+        </member>
+        <member name="F:Telerik.WinControls.Export.SpreadStreamExportFormat.Csv">
+            <summary>
+            CSV format
+            </summary>
+        </member>
+        <member name="T:Telerik.WinControls.Export.FileExportMode">
+            <summary>
+            Enum listing the different options when exporting to a file
+            </summary>
+        </member>
+        <member name="F:Telerik.WinControls.Export.FileExportMode.NewSheetInExistingFile">
+            <summary>
+            Export as new sheet in existing file
+            </summary>
+        </member>
+        <member name="F:Telerik.WinControls.Export.FileExportMode.CreateOrOverrideFile">
+            <summary>
+            Export in new file or override existing file
+            </summary>
+        </member>
         <member name="M:Telerik.Data.Expressions.ExpressionItemsList.LoadFromXML">
             <summary>
             Load expression items list from embedded in Telerik assembly xml source
@@ -1765,7 +2010,7 @@
         </member>
         <member name="P:Telerik.WinControls.RadControl.ThemeName">
             <summary>
-                Gets or sets control's preffered theme name. Themes are stored and retrieved using
+                Gets or sets control's preferred theme name. Themes are stored and retrieved using
                 APIs of <see cref="T:Telerik.WinControls.ThemeResolutionService"/>.
             </summary>
             <remarks>
@@ -1794,16 +2039,18 @@
             </summary>
             <remarks>
             By default the return value is RadControl's type FullName; Some controls like drop down menu has different ThemeClassName
-            depending on the runtime usaage of the control.
+            depending on the runtime usage of the control.
             </remarks>
         </member>
         <member name="P:Telerik.WinControls.RadControl.ImageList">
             <summary>
-            	Gets or sets the ImageList that contains the images displayed by this control.
+            Gets or sets the ImageList that contains the images displayed by this control.
             </summary>
         </member>
         <member name="P:Telerik.WinControls.RadControl.ImageScalingSize">
-            <summary>Gets or sets the image scaling size.</summary>
+            <summary>
+            Gets or sets the image scaling size.
+            </summary>
         </member>
         <member name="P:Telerik.WinControls.RadControl.UseCompatibleTextRendering">
             <summary>
@@ -1812,8 +2059,8 @@
         </member>
         <member name="P:Telerik.WinControls.RadControl.AutoSize">
             <summary>
-            	<para>Gets or sets a value indicating whether the control is automatically resized
-                to display its entire contents.</para>
+            <para>Gets or sets a value indicating whether the control is automatically resized
+            to display its entire contents.</para>
             </summary>
         </member>
         <member name="P:Telerik.WinControls.RadControl.MaximumSize">
@@ -1835,7 +2082,7 @@
         </member>
         <member name="P:Telerik.WinControls.RadControl.SmallImageList">
             <summary>
-            	Gets or sets the SmallImageList that contains the small images which are displayed when there's not enough space.
+            Gets or sets the SmallImageList that contains the small images which are displayed when there's not enough space.
             </summary>
         </member>
         <member name="P:Telerik.WinControls.RadControl.SmallImageScalingSize">
@@ -1860,7 +2107,7 @@
         <member name="P:Telerik.WinControls.RadControl.EnableKeyMap">
             <summary>
             Gets or sets whether Key Map (Office 2007 like accelerator keys map)
-            is used for this speciffic control. Currently this option is implemented for 
+            is used for this specific control. Currently this option is implemented for 
             the RadRibbonBar control only.
             </summary>
         </member>
@@ -1883,7 +2130,7 @@
         </member>
         <member name="E:Telerik.WinControls.RadControl.ToolTipTextNeeded">
             <summary>
-            Occurs when a RadItem instance iside the RadControl requires ToolTip text. 
+            Occurs when a RadItem instance inside the RadControl requires ToolTip text. 
             </summary>
         </member>
         <member name="E:Telerik.WinControls.RadControl.ScreenTipNeeded">
@@ -1899,7 +2146,7 @@
         </member>
         <member name="E:Telerik.WinControls.RadControl.PropertyChanged">
             <summary>
-            Occurs when when a property of an object changes change. 
+            Occurs when a property of an object changes change. 
             Calling the event is developer's responsibility.
             </summary>
         </member>
@@ -2104,6 +2351,41 @@
         <member name="F:Telerik.WinControls.Enumerations.WaitingBarStyles.Dash">
             <summary>
             Indicates Dash style
+            </summary>
+        </member>
+        <member name="F:Telerik.WinControls.Enumerations.WaitingBarStyles.DotsLine">
+            <summary>
+            Shows a line of moving dots.
+            </summary>
+        </member>
+        <member name="F:Telerik.WinControls.Enumerations.WaitingBarStyles.DotsSpinner">
+            <summary>
+            Shows a ring of moving dots.
+            </summary>
+        </member>
+        <member name="F:Telerik.WinControls.Enumerations.WaitingBarStyles.LineRing">
+            <summary>
+            Shows a ring, composed of lines.
+            </summary>
+        </member>
+        <member name="F:Telerik.WinControls.Enumerations.WaitingBarStyles.SegmentedRing">
+            <summary>
+            Shows a ring, composed of segments.
+            </summary>
+        </member>
+        <member name="F:Telerik.WinControls.Enumerations.WaitingBarStyles.DotsRing">
+            <summary>
+            Shows a ring, composed of dots.
+            </summary>
+        </member>
+        <member name="F:Telerik.WinControls.Enumerations.WaitingBarStyles.FadingRing">
+            <summary>
+            Shows a rotating fading ring.
+            </summary>
+        </member>
+        <member name="F:Telerik.WinControls.Enumerations.WaitingBarStyles.RotatingRings">
+            <summary>
+            Shows two rotating rings in opposite directions.
             </summary>
         </member>
         <member name="P:Telerik.WinControls.GestureEventArgs.Handled">
@@ -2351,7 +2633,7 @@
         </member>
         <member name="M:Telerik.WinControls.RadElement.LoadCore">
             <summary>
-            Allows inheritors to porvide custom load logic.
+            Allows inheritors to provide custom load logic.
             </summary>
         </member>
         <member name="M:Telerik.WinControls.RadElement.OnLoaded">
@@ -2473,7 +2755,7 @@
         </member>
         <member name="M:Telerik.WinControls.RadElement.GetBoundingRectangle(System.Drawing.Size)">
             <summary>
-            	Gets the rectangle which surronds the rotated element (if having AngleTransform property set).
+            Gets the rectangle which surrounds the rotated element (if having AngleTransform property set).
             </summary>
             <param name="size">The size of the element which is accepted as a parameter (for example when returned from GetPreferredSize).</param>
             <returns></returns>
@@ -2504,7 +2786,7 @@
             The element must call the Arrange method of each of its children.
             </summary>
             <param name="finalSize">The size that is available for element.</param>
-            <returns>The rectangle occupied by the element. Usually <paramref name="finalSize"/>. Should you return different size, the Layout system will restart measuring and rearraning the items. That could lead to infinite recursion.</returns>
+            <returns>The rectangle occupied by the element. Usually <paramref name="finalSize"/>. Should you return different size, the Layout system will restart measuring and rearranging the items. That could lead to infinite recursion.</returns>
             <remarks>In this method call to the Arrange method of each child must be made.</remarks>
         </member>
         <member name="M:Telerik.WinControls.RadElement.MeasureOverride(System.Drawing.SizeF)">
@@ -2514,7 +2796,7 @@
             Used by the layout system.
             </summary>
             <param name="availableSize">The size that is available to the <see cref="T:Telerik.WinControls.RadElement"/>. The available size can be infinity (to take the full size of the element)</param>
-            <returns>The minimum size required by the element to be completely visible. Cannot be infinify.</returns>
+            <returns>The minimum size required by the element to be completely visible. Cannot be infinity.</returns>
             <remarks>In this method call to the Measure method of each child must be made.</remarks>
         </member>
         <member name="M:Telerik.WinControls.RadElement.GetArrangeRect(System.Drawing.RectangleF)">
@@ -2569,7 +2851,7 @@
         <member name="M:Telerik.WinControls.RadElement.PaintOverride(Telerik.WinControls.Paint.IGraphics,System.Drawing.Rectangle,System.Single,System.Drawing.SizeF,System.Boolean)">
             <summary>
             Virtual layer between PaintChildren() and Paint().
-            Can be overriden to fully customize element hierarchy paint.
+            Can be overridden to fully customize element hierarchy paint.
             Used for painting disabled items.
             </summary>
             <param name="graphics">The graphics object.</param>
@@ -2667,7 +2949,7 @@
             </summary>
             <remarks>
             Behaviors can be used to specify how an element should respond when a certain element property changes.
-            Behaviors are used internally by stylesheets when applying to an hiearrchy of elements.
+            Behaviors are used internally by stylesheets when applying to an hierarchy of elements.
             </remarks>
             <param name="behavior">behavior instance - should not be null (or Nothing in VB.NET)</param>
         </member>
@@ -2827,7 +3109,7 @@
         </member>
         <member name="M:Telerik.WinControls.RadElement.IsChildOf(Telerik.WinControls.RadElement)">
             <summary>
-            Get a value indincating whether the element is a direct or indirect child of specified parent element
+            Get a value indicating whether the element is a direct or indirect child of specified parent element
             </summary>
             <param name="parent">Parent to test</param>
             <returns>true if the element is child of parent, false otherwise</returns>
@@ -3060,7 +3342,7 @@
         </member>
         <member name="E:Telerik.WinControls.RadElement.ElementPainted">
             <summary>
-            This event occurs after pinting the element. It is used internally.
+            This event occurs after printing the element. It is used internally.
             </summary>
         </member>
         <member name="P:Telerik.WinControls.RadElement.UseSystemSkin">
@@ -3252,7 +3534,7 @@
             interaction.
             </summary>
             <remarks> 
-            By default, if element is currently selected when Enalbed set to false, next element would be selected.
+            By default, if element is currently selected when Enabled set to false, next element would be selected.
             Values inherits from Parent.Enabled.
             When a scrollable control is disabled, the scroll bars are also disabled. 
             For example, a disabled multiline textbox is unable to scroll to display all the lines of text.
@@ -3341,7 +3623,7 @@
             Shape is an object that defines the bounding graphics path of an element. Graphics clip is always applied when an element has shape.
             Shape is considered when painting the border element, and when hit-testing an element.
             Some predefined shapes are available, like <see cref="T:Telerik.WinControls.RoundRectShape"/> or <see cref="T:Telerik.WinControls.EllipseShape"/>.
-            <see cref="T:Telerik.WinControls.CustomShape"/> offers a way to specify element's shape with a sequance of points and curves using code 
+            <see cref="T:Telerik.WinControls.CustomShape"/> offers a way to specify element's shape with a sequence of points and curves using code 
             or the design time <see cref="T:Telerik.WinControls.ElementShapeEditor"/>
             	<see cref="T:System.Drawing.Design.UITypeEditor"/>.
             </remarks>
@@ -3359,8 +3641,8 @@
         </member>
         <member name="P:Telerik.WinControls.RadElement.ZIndex">
             <summary>
-            Gest of sets the order of painting an element compared to its sibling elements. Greater ZIndex means an element would be 
-            painted on top of other elements amongst its sibligs. ZIndex changes the order of the elements in the list returned by
+            Gets of sets the order of painting an element compared to its sibling elements. Greater ZIndex means an element would be 
+            painted on top of other elements amongst its siblings. ZIndex changes the order of the elements in the list returned by
             <see cref="M:Telerik.WinControls.RadElement.GetChildren(Telerik.WinControls.ChildrenListOptions)"/>.
             </summary>
         </member>
@@ -3387,7 +3669,7 @@
         </member>
         <member name="P:Telerik.WinControls.RadElement.ScaleTransform">
             <summary>
-            Gets or sets a value indicating the scale transform factors, when paintin the
+            Gets or sets a value indicating the scale transform factors, when painting the
             element and its children.
             </summary>
         </member>
@@ -3403,7 +3685,7 @@
             painting the element and its children.
             </summary>
             <remarks>
-            TrnslateTransform of the graphics is used prior to painting the elemen and after painting element children, 
+            TrnslateTransform of the graphics is used prior to painting the element and after painting element children, 
             to reset the transformation
             </remarks>
         </member>
@@ -3821,6 +4103,77 @@
             <param name="oldMousePosition"></param>
             <param name="dragObject"></param>
         </member>
+        <member name="M:Telerik.WinControls.RadItem.SetThemeValueOverride(Telerik.WinControls.RadProperty,System.Object,System.String)">
+            <summary>
+            Applies the provided value as an override of the theme setting 
+            for the specified property in the specified state.
+            </summary>
+            <param name="property">The property to override.</param>
+            <param name="value">The value to override the theme setting with.</param>
+            <param name="state">The VisualState of the item for which the setting will be applied.
+            States can be combined using "." (dot). To see a list of the available states for this
+            element, use the GetAvailableVisualStates method.</param>
+        </member>
+        <member name="M:Telerik.WinControls.RadItem.SetThemeValueOverride(Telerik.WinControls.RadProperty,System.Object,System.String,System.String)">
+            <summary>
+            Applies the provided value as an override of the theme setting 
+            for the specified property in the specified state.
+            </summary>
+            <param name="property">The property to override.</param>
+            <param name="value">The value to override the theme setting with.</param>
+            <param name="state">The VisualState of the item for which the setting will be applied.
+            States can be combined using "." (dot). To see a list of the available states for this
+            element, use the GetAvailableVisualStates method.</param>        
+            <param name="childElementClass">The value of the Class property of the child element for which
+            the override stands. (e.g. ButtonFill, ButtonBorder, etc.)</param>
+        </member>
+        <member name="M:Telerik.WinControls.RadItem.SetThemeValueOverride(Telerik.WinControls.RadProperty,System.Object,System.String,System.Type)">
+            <summary>
+            Applies the provided value as an override of the theme setting 
+            for the specified property in the specified state.
+            </summary>
+            <param name="property">The property to override.</param>
+            <param name="value">The value to override the theme setting with.</param>
+            <param name="state">The VisualState of the item for which the setting will be applied.
+            States can be combined using "." (dot). To see a list of the available states for this
+            element, use the GetAvailableVisualStates method.</param>       
+            <param name="childElementType">The type of the child element for which
+            the override stands. (e.g. typeof(FillPrimitive), typeof(BorderPrimitive), etc.)</param>
+        </member>
+        <member name="M:Telerik.WinControls.RadItem.ResetThemeValueOverride(Telerik.WinControls.RadProperty)">
+            <summary>
+            Resets all overrides for the theme settings of a given property.
+            </summary>
+            <param name="property">The property to reset overrides for.</param>
+        </member>
+        <member name="M:Telerik.WinControls.RadItem.ResetThemeValueOverride(Telerik.WinControls.RadProperty,System.String)">
+            <summary>
+            Resets all overrides for the theme settings of a given property and a given state.
+            </summary>
+            <param name="property">The property to reset overrides for.</param>
+            <param name="state">The state to reset.</param>
+        </member>
+        <member name="M:Telerik.WinControls.RadItem.ResetThemeValueOverrides">
+            <summary>
+            Resets all theme override settings for this element.
+            </summary>
+        </member>
+        <member name="M:Telerik.WinControls.RadItem.SuspendApplyOfThemeSettings">
+            <summary>
+            Suspends the apply of theme settings.
+            </summary>
+        </member>
+        <member name="M:Telerik.WinControls.RadItem.ResumeApplyOfThemeSettings">
+            <summary>
+            Resumes the apply of theme settings.
+            </summary>
+        </member>
+        <member name="M:Telerik.WinControls.RadItem.GetAvailableVisualStates">
+            <summary>
+            Gets the available visual states for this item. Visual states can be combined using "." (dot).
+            </summary>
+            <returns>A list with the available visual states for this element.</returns>
+        </member>
         <member name="E:Telerik.WinControls.RadItem.TextChanging">
             <summary>
             	Occurs when the Text property value is about to be changed.
@@ -3970,7 +4323,7 @@
         </member>
         <member name="P:Telerik.WinControls.RadScreenTipElement.EnableCustomSize">
             <summary>
-            Gets or sets value indicating whether Office 2007 UI compliant screen tip sizing should be used (value of false)
+            Gets or sets value indicating whether Office 2007 UI compliant screen tip sizing should be used
             </summary>
         </member>
         <member name="P:Telerik.WinControls.RadScreenTipElement.Description">
@@ -4968,6 +5321,30 @@
             Calling the event is developer's responsibility.
             </summary>
         </member>
+        <member name="P:Telerik.Licensing.ComponentUsedEventArgs.Type">
+            <summary>
+            Gets the type.
+            </summary>
+            <value>
+            The type.
+            </value>
+        </member>
+        <member name="P:Telerik.Licensing.ComponentUsedEventArgs.SessionId">
+            <summary>
+            Gets or sets the session identifier.
+            </summary>
+            <value>
+            The session identifier.
+            </value>
+        </member>
+        <member name="P:Telerik.Licensing.ProductUsedEventArgs.InstalationKey">
+            <summary>
+            Gets the instalation key.
+            </summary>
+            <value>
+            The instalation key.
+            </value>
+        </member>
         <member name="M:Telerik.Licensing.DateTimeExtensions.FromIso8601(System.String)">
             <summary>
             Converts an ISO 8601 time/date format string, which is used by JSON and others,
@@ -5806,6 +6183,12 @@
         <member name="P:Telerik.WinControls.UI.OfficeShape.RoundedBottom">
             <summary><para>Gets or sets whether the bottom edges of the form should be rounded.</para></summary>
         </member>
+        <member name="M:Telerik.WinControls.Shapes.PathElementShape.SerializeProperties">
+            <summary>Serializes properties. Required for telerik serialization mechanism.</summary>
+        </member>
+        <member name="M:Telerik.WinControls.Shapes.PathElementShape.DeserializeProperties(System.String)">
+            <summary>Deserializes properties. Required for telerik deserialization mechanism.</summary>
+        </member>
         <member name="M:Telerik.WinControls.Tests.QAShape.CreatePath(System.Drawing.Rectangle)">
             <summary>
             Creates donut-like path. Overrides the method defined in its base class -
@@ -6569,7 +6952,7 @@
             <param name="currentType">The type which owns this property.</param>
             <param name="propertyName">The property name.</param>
             <param name="fallback">Specifies whether to search base classes if the current type does not contain the specified property.</param>
-            <returns>An instance of <see cref="T:Telerik.WinControls.RadProperty"/> if successfull.</returns>
+            <returns>An instance of <see cref="T:Telerik.WinControls.RadProperty"/> if successful.</returns>
         </member>
         <member name="P:Telerik.WinControls.PropertySetting.Name">
             <summary>
@@ -6801,7 +7184,7 @@
             Creates a new style sheet based on this style group for the specified element.
             </summary>
             <param name="element">The element.</param>
-            <returns>An instance of <see cref="T:Telerik.WinControls.StyleSheet"/> if successfull.</returns>
+            <returns>An instance of <see cref="T:Telerik.WinControls.StyleSheet"/> if successful.</returns>
         </member>
         <member name="M:Telerik.WinControls.StyleGroup.Combine(Telerik.WinControls.StyleGroup,System.Boolean)">
             <summary>
@@ -7201,7 +7584,7 @@
         </member>
         <member name="M:Telerik.WinControls.ComponentBehavior.DisposeKeyTips">
             <summary>
-            Clears all resources reserved for the KeyTips functionallity
+            Clears all resources reserved for the KeyTips functionality
             </summary>
         </member>
         <member name="M:Telerik.WinControls.ComponentBehavior.ProccessKeyMap(System.Windows.Forms.Keys)">
@@ -7278,7 +7661,7 @@
         <member name="P:Telerik.WinControls.ComponentBehavior.EnableKeyTips">
             <summary>
             Gets or sets whether Key Tips (Office 2007 like accelerator keys map)
-            are used for this speciffic control.
+            are used for this specific control.
             </summary>
         </member>
         <member name="P:Telerik.WinControls.ComponentBehavior.MouseOver">
@@ -7388,7 +7771,7 @@
             </summary>
             <remarks>
             By default the return value is RadControl's type FullName; Some controls like drop down menu has different ThemeClassName
-            depending on the runtime usaage of the control.
+            depending on the runtime usage of the control.
             </remarks>
         </member>
         <member name="P:Telerik.WinControls.ComponentThemableElementTree.StyleVersion">
@@ -8301,6 +8684,16 @@
             </summary>
             <value>The filter expression.</value>
         </member>
+        <member name="P:Telerik.WinControls.Data.RadCollectionView`1.BypassFilter">
+            <summary>
+            Gets or sets a value indicating whether filtering will be performed or it will be handled by the user/data source.
+            </summary>
+        </member>
+        <member name="P:Telerik.WinControls.Data.RadCollectionView`1.BypassSort">
+            <summary>
+            Gets or sets a value indicating whether sorting will be performed or it will be handled by the user/data source.
+            </summary>
+        </member>
         <member name="P:Telerik.WinControls.Data.RadCollectionView`1.HasFilter">
             <summary>
             Gets a value indicating whether this instance has filter applied.
@@ -9203,6 +9596,20 @@
             </summary>
             <param name="item"></param> 
         </member>
+        <member name="M:Telerik.WinControls.Data.RadListSource`1.NotifyItemChanging(`0,System.String)">
+            <summary>
+            Raises a CollectionChanged notification with action ItemChanging. Must be paired with the NotifyItemChanged method.
+            </summary>
+            <param name="item"></param>        
+            <param name="propertyName"></param> 
+        </member>
+        <member name="M:Telerik.WinControls.Data.RadListSource`1.NotifyItemChanged(`0,System.String)">
+            <summary>
+            Raises a CollectionChanged notification with action ItemChanged. Must be paired with the NotifyItemChanging method.
+            </summary>
+            <param name="item"></param> 
+            <param name="propertyName"></param> 
+        </member>
         <member name="M:Telerik.WinControls.Data.RadListSource`1.GetItemProperties(System.ComponentModel.PropertyDescriptor[])">
             <summary>
             Returns the <see cref="T:System.ComponentModel.PropertyDescriptorCollection"/> that represents the properties on each item used to bind data.
@@ -9273,6 +9680,11 @@
             <exception cref="T:System.NotSupportedException">
             The <see cref="T:System.Collections.Generic.ICollection`1"/> is read-only.
             </exception>
+        </member>
+        <member name="M:Telerik.WinControls.Data.RadListSource`1.AddUnboundInternal(`0)">
+            <summary>
+            Used internally by the design time property editor.
+            </summary>
         </member>
         <member name="M:Telerik.WinControls.Data.RadListSource`1.Clear">
             <summary>
@@ -10945,6 +11357,20 @@
             <param name="matrix"></param>
             <returns>Returns the bounding rectangle around the rectangle
             that is rotated according to the given matrix</returns>
+        </member>
+        <member name="M:Telerik.WinControls.TelerikHelper.GetColorAtPoint(System.Drawing.Point)">
+            <summary>
+            Gets the color of the pixel at the specified location on the screen.
+            </summary>
+            <param name="location">The location in screen coordinates to get the color for.</param>
+            <returns>The color of the pixed at the specified location.</returns>
+        </member>
+        <member name="M:Telerik.WinControls.TelerikHelper.KeyCodeToUnicode(System.Windows.Forms.Keys)">
+            <summary>
+            Converts a key to string taking into account the currently selected keyboard leyout.
+            </summary>
+            <param name="key">The key to convert.</param>
+            <returns>The string mapped to the provided key.</returns>
         </member>
         <member name="T:Telerik.WinControls.CollectionResetReason">
             <summary>
@@ -12844,7 +13270,7 @@
         <member name="T:Telerik.WinControls.RadHostItem">
             <summary>
             Represents an item that contains external control. There is no limitation for the control type - could
-            be any descedant of the class Control.
+            be any descendant of the class Control.
             </summary>
         </member>
         <member name="F:Telerik.WinControls.RadHostItem.RadHostItemLastStateKey">
@@ -13233,13 +13659,13 @@
         </member>
         <member name="M:Telerik.WinControls.Primitives.BorderPrimitiveImpl.PaintBorder(Telerik.WinControls.Paint.IGraphics,System.Single,System.Drawing.SizeF)">
             <summary>
-            Virtual method that paints the primitive on the screen. It may be overriden by
+            Virtual method that paints the primitive on the screen. It may be overridden by
             the derived types.
             </summary>
         </member>
         <member name="M:Telerik.WinControls.Primitives.BorderPrimitiveImpl.PaintBorder(Telerik.WinControls.Paint.IGraphics,System.Single,System.Drawing.SizeF,System.Drawing.RectangleF)">
             <summary>
-            Virtual method that paints the primitive on the screen. It may be overriden by
+            Virtual method that paints the primitive on the screen. It may be overridden by
             the derived types.
             </summary>
         </member>
@@ -13587,6 +14013,12 @@
             BaseLine Property
             </summary>
         </member>
+        <member name="M:Telerik.WinControls.Primitives.TextPrimitiveImpl.DrawTextWithGDI(System.Drawing.Graphics,System.String,System.Drawing.Font,System.Drawing.Rectangle,System.Drawing.Color,System.Drawing.Color,System.Windows.Forms.TextFormatFlags)">
+            <summary>
+            This method draws text to a Bitmap graphics which is used when an element/control is in Disabled state. GDI does not draw text well on a bitmap graphics surface, 
+            hence the need for this method.
+            </summary>
+        </member>
         <member name="M:Telerik.WinControls.Primitives.TextPrimitiveImpl.GetTextSize(Telerik.WinControls.Primitives.TextParams)">
             <summary>Retrieves the text size.</summary>
         </member>
@@ -13799,11 +14231,6 @@
               Looks up a localized resource of type System.Drawing.Bitmap.
             </summary>
         </member>
-        <member name="P:Telerik.WinControls.Properties.Resources.Icon">
-            <summary>
-              Looks up a localized resource of type System.Drawing.Icon similar to (Icon).
-            </summary>
-        </member>
         <member name="P:Telerik.WinControls.Properties.Resources.imageClosed">
             <summary>
               Looks up a localized resource of type System.Drawing.Bitmap.
@@ -13814,19 +14241,14 @@
               Looks up a localized resource of type System.Drawing.Bitmap.
             </summary>
         </member>
-        <member name="P:Telerik.WinControls.Properties.Resources.logo_black_16x16">
+        <member name="P:Telerik.WinControls.Properties.Resources.MenuIcon">
             <summary>
               Looks up a localized resource of type System.Drawing.Bitmap.
             </summary>
         </member>
-        <member name="P:Telerik.WinControls.Properties.Resources.logo_white_16x16">
+        <member name="P:Telerik.WinControls.Properties.Resources.ProgressIcon">
             <summary>
-              Looks up a localized resource of type System.Drawing.Bitmap.
-            </summary>
-        </member>
-        <member name="P:Telerik.WinControls.Properties.Resources.LogoT">
-            <summary>
-              Looks up a localized resource of type System.Drawing.Bitmap.
+              Looks up a localized resource of type System.Drawing.Icon similar to (Icon).
             </summary>
         </member>
         <member name="P:Telerik.WinControls.Properties.Resources.RadControls">
@@ -13854,7 +14276,12 @@
               Looks up a localized resource of type System.Drawing.Bitmap.
             </summary>
         </member>
-        <member name="P:Telerik.WinControls.Properties.Resources.WinFormIcon64">
+        <member name="P:Telerik.WinControls.Properties.Resources.WinFormsIcon">
+            <summary>
+              Looks up a localized resource of type System.Drawing.Icon similar to (Icon).
+            </summary>
+        </member>
+        <member name="P:Telerik.WinControls.Properties.Resources.WinFormsLogo">
             <summary>
               Looks up a localized resource of type System.Drawing.Bitmap.
             </summary>
@@ -15119,20 +15546,20 @@
         <member name="M:Telerik.WinControls.Paint.IGraphics.FillPolygon(System.Drawing.Color,System.Drawing.Point[])">
             <summary>
             Fills the interior of a polygon defined by an array of points specified by
-               <a href="frlrfsystemdrawingpointclasstopic.asp">Point</a> structures and
+               <a href="T_Telerik_Windows_Diagrams_Core_Point.htm">Point</a> structures and
                color.
             </summary>
         </member>
         <member name="M:Telerik.WinControls.Paint.IGraphics.FillPolygon(System.Drawing.Color,System.Drawing.PointF[])">
             <summary>
             Fills the interior of a polygon defined by color and an array of points specified
-            by <a href="frlrfsystemdrawingpointclasstopic.asp">Point</a> structures.
+            by <a href="T_Telerik_Windows_Diagrams_Core_Point.htm">Point</a> structures.
             </summary>
         </member>
         <member name="M:Telerik.WinControls.Paint.IGraphics.FillPolygon(System.Drawing.Brush,System.Drawing.PointF[])">
             <summary>
             Fills the interior of a polygon defined by brush and an array of points specified
-            by <a href="frlrfsystemdrawingpointclasstopic.asp">Point</a> structures.
+            by <a href="T_Telerik_Windows_Diagrams_Core_Point.htm">Point</a> structures.
             </summary>
         </member>
         <member name="M:Telerik.WinControls.Paint.IGraphics.DrawRoundRect(System.Drawing.Rectangle,System.Drawing.Color,System.Single,System.Int32)">
@@ -15217,7 +15644,7 @@
         </member>
         <member name="M:Telerik.WinControls.Primitives.BorderPrimitive.PaintPrimitive(Telerik.WinControls.Paint.IGraphics,System.Single,System.Drawing.SizeF)">
             <summary>
-            Virtual method that paints the primitive on the screen. It may be overriden by
+            Virtual method that paints the primitive on the screen. It may be overridden by
             the derived types.
             </summary>
         </member>
@@ -16276,7 +16703,7 @@
             <summary>
             Constructs new instance of the class, providing extended serialization information.
             </summary>
-            <param name="typeMap">Dictinary to use that maps type names to XML element names. Keys of the dictionary entries should be type full names. Values should correspond to the type instances.</param>
+            <param name="typeMap">Dictionary to use that maps type names to XML element names. Keys of the dictionary entries should be type full names. Values should correspond to the type instances.</param>
             <param name="componentSerializationInfo">Extends the properties serialization information.</param>
         </member>
         <member name="M:Telerik.WinControls.XmlSerialization.ComponentXmlSerializer.ReadCollectionElement(System.Xml.XmlReader,System.Collections.IList)">
@@ -16311,7 +16738,7 @@
             <param name="parent"></param>
             <param name="parentProperty"></param>
             <param name="toRead"></param>
-            <param name="uniquePropertyName">property used to match objects in collecion</param>
+            <param name="uniquePropertyName">property used to match objects in collection</param>
         </member>
         <member name="M:Telerik.WinControls.XmlSerialization.ComponentXmlSerializer.ReadMergeCollection(System.Xml.XmlReader,System.Object,System.ComponentModel.PropertyDescriptor,System.Collections.IList,System.String,System.Boolean)">
             <summary>
@@ -16321,7 +16748,7 @@
             <param name="parent"></param>
             <param name="parentProperty"></param>
             <param name="toRead"></param>
-            <param name="uniquePropertyName">property used to match objects in collecion</param>
+            <param name="uniquePropertyName">property used to match objects in collection</param>
             <param name="disposeObjects"></param>
         </member>
         <member name="M:Telerik.WinControls.XmlSerialization.ComponentXmlSerializer.ReadMergeCollection(System.Xml.XmlReader,System.Object,System.ComponentModel.PropertyDescriptor,System.Collections.IList,System.String,System.Boolean,System.Boolean)">
@@ -16329,7 +16756,7 @@
             if Reader is positioned at an element that is a collection, reads the collection items.
             </summary>
             <param name="reader"></param>
-            <param name="uniquePropertyName">property used to match objects in collecion</param>
+            <param name="uniquePropertyName">property used to match objects in collection</param>
             <param name="toRead"></param>
             <param name="disposeObjects"></param>
             <param name="parent"></param>
@@ -16379,7 +16806,7 @@
             <summary>
             Deserializes a specified property of an object
             </summary>
-            <param name="reader">Xml reader, positioned on the element coresponding to the property to deserialize</param>
+            <param name="reader">Xml reader, positioned on the element corresponding to the property to deserialize</param>
             <param name="property">Property descriptor of the property to deserialize</param>
             <param name="toRead">Object that owns the property to deserialize</param>
         </member>
@@ -16391,7 +16818,7 @@
             <param name="listOwner"></param>
             <param name="ownerProperty"></param>
             <param name="list"></param>
-            <returns>True if the list does not require further processign by the deserializer, False to use the default deserailization</returns>
+            <returns>True if the list does not require further processing by the deserializer, False to use the default deserialization</returns>
         </member>
         <member name="M:Telerik.WinControls.XmlSerialization.ComponentXmlSerializer.WriteObjectElement(System.Xml.XmlWriter,System.Object)">
             <summary>
@@ -16402,7 +16829,7 @@
         </member>
         <member name="M:Telerik.WinControls.XmlSerialization.ComponentXmlSerializer.ShouldSerializeValue(System.Object,System.ComponentModel.PropertyDescriptor,Telerik.WinControls.XmlSerialization.PropertySerializationMetadata)">
             <summary>
-            Provides logic to determine whether property value should be serlilized.
+            Provides logic to determine whether property value should be serialized.
             </summary>
             <remarks>
             ShouldSerialize value resolution is as follows: 
@@ -16414,7 +16841,7 @@
             </remarks>
             <param name="component"></param>
             <param name="property">property to serialize</param>
-            <param name="overwriteMetadata">collection of extra serialization attributes for the proeprty, corresponding to ComponentSerializationInfo</param>
+            <param name="overwriteMetadata">collection of extra serialization attributes for the property, corresponding to ComponentSerializationInfo</param>
             <returns>value indicating whether property value should be serialized</returns>
         </member>
         <member name="P:Telerik.WinControls.XmlSerialization.ComponentXmlSerializer.ResolveTypesOnlyInTelerikAssemblies">
@@ -17605,6 +18032,17 @@
             </summary>
             <param name="value">
                An array of type <see cref="T:Telerik.WinControls.RadElement"/> containing the objects to add to the collection.
+            </param>
+            <returns>
+              <para>None.</para>
+            </returns>
+        </member>
+        <member name="M:Telerik.WinControls.RadElementCollection.AddRange(System.Collections.Generic.IList{Telerik.WinControls.RadElement})">
+            <summary>
+            <para>Copies the elements of an IList of RadElements to the end of the <see cref="T:Telerik.WinControls.RadElementCollection"/>.</para>
+            </summary>
+            <param name="value">
+               An List of type <see cref="T:Telerik.WinControls.RadElement"/> containing the objects to add to the collection.
             </param>
             <returns>
               <para>None.</para>
@@ -20278,8 +20716,7 @@
             Gets the collection of entries that are currently in the zip archive.
             </summary>
             <exception cref="T:System.NotSupportedException">The zip archive does not support reading.</exception>
-            <exception cref="T:System.ObjectDisposedException">The zip archive has been disposed.</exception>
-            <exception cref="T:Telerik.WinControls.Zip.InvalidDataException">The zip archive is corrupt, and its entries cannot be retrieved.</exception>
+            <exception cref="T:System.ObjectDisposedException">The zip archive has been disposed.</exception>        
         </member>
         <member name="T:Telerik.WinControls.Zip.ZipPackageEntry">
             <summary>
@@ -21146,10 +21583,11 @@
             Gets or sets file name.
             </summary>
         </member>
-        <member name="P:Telerik.WinControls.Zip.FileHeaderBase.ExtraField">
+        <member name="P:Telerik.WinControls.Zip.FileHeaderBase.ExtraFieldsData">
             <summary>
-            Gets or sets extra field.
+            Gets or sets extra fields data.
             </summary>
+            <value>The extra fields data.</value>
         </member>
         <member name="P:Telerik.WinControls.Zip.FileHeaderBase.ExtraFields">
             <summary>
@@ -21367,11 +21805,11 @@
             ZIP File Format Specification v6.3.3, #4.5.2.
             </summary>
         </member>
-        <member name="M:Telerik.WinControls.Zip.ExtraFieldBase.GetExtraFields(System.Byte[])">
+        <member name="M:Telerik.WinControls.Zip.ExtraFieldBase.GetExtraFields(Telerik.WinControls.Zip.FileHeaderInfoBase)">
             <summary>
             Gets extra field collection.
             </summary>
-            <param name="extraField">Extra field data.</param>
+            <param name="headerInfo">The header info.</param>
             <returns>IEnumerable of ExtraFieldBase instances.</returns>
         </member>
         <member name="M:Telerik.WinControls.Zip.ExtraFieldBase.GetExtraFieldsData(System.Collections.Generic.IEnumerable{Telerik.WinControls.Zip.ExtraFieldBase})">
