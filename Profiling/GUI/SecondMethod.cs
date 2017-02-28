@@ -19,7 +19,7 @@ namespace Profiling
     public partial class Form2 : Telerik.WinControls.UI.RadForm
     {
 
-#region Переменные
+        #region Переменные
 
 
         bool FirstForm; //первая канавка
@@ -45,17 +45,15 @@ namespace Profiling
 
 #endregion
 
-        //конструктор (метод который выполняется первым делом и настраивает интерфейс программы)
         public Form2()
         {
             InitializeComponent();
             anT.InitializeContexts();
-            InitStartParams();
+            //InitStartParams();
             firstStyle = tableLayoutPanel1.RowStyles[1].Height;
             secondStyle = tableLayoutPanel1.RowStyles[2].Height;
         }
         
-        //инициализация начальных переменных программы
         private void InitStartParams()
         {
             //инициализируем переменные для отображения
@@ -347,7 +345,6 @@ namespace Profiling
         }
         
         
-        
 
         //Рисуем графики профилей
         private void DrawChart()
@@ -355,28 +352,26 @@ namespace Profiling
             //Рисуем график
             GraphPane pane = zedGraphControl1.GraphPane;
 
-            // Очистим список кривых на тот случай, если до этого сигналы уже были нарисованы
             pane.CurveList.Clear();
             pane.IsShowTitle = false;
 
             // Создадим список точек
             PointPairList list = new PointPairList();
             PointPairList list2 = new PointPairList();
-
-            // Заполняем список точек
+            PointPairList list3 = new PointPairList();
+           
             for (int i = 0; i < act_quant; i++)
             {
                 // добавим в список точку
-                list.Add(arrayO[i].X, arrayO[i].Y);
-                list2.Add(array[i].X, array[i].Y);
+                list.Add(arrayO[i].Z, arrayO[i].X);
+                list2.Add(-arrayO[i].Z + 2 * array1[act_quant / 2].Z, arrayO[i].X);
+                list3.Add(array1[i].Z, array1[i].X);
             }
 
-            // Создадим кривую с названием "Sinc", 
-            // которая будет рисоваться голубым цветом (Color.Blue),
-            // Опорные точки выделяться не будут (SymbolType.None)
+   
             LineItem myCurve = pane.AddCurve("Line1", list, Color.Black, SymbolType.None);
             LineItem myCurve2 = pane.AddCurve("Line2", list2, Color.Blue, SymbolType.None);
-
+            LineItem myCurve3 = pane.AddCurve("Line3", list3, Color.Brown, SymbolType.None);
             zedGraphControl1.AxisChange();
 
             // Обновляем график
@@ -431,10 +426,8 @@ namespace Profiling
         
 
         #region OpenGl
-
-        //Построение 3D модели
-
-        //Настройка стартовых параметров
+        
+        
         private void Form1_Load(object sender, EventArgs e)
         {
             Glut.glutInit();
@@ -467,21 +460,17 @@ namespace Profiling
             //  tabControl1.SelectedIndex = 1;
             trackBar4_Scroll(null, null);
         }
-
-
-
+        
         //Задаём угол обзора и пересчитываем 3D вид
         private void trackBar4_Scroll(object sender, EventArgs e)
         {
             //angel = trackBar4.Value;
             camR = trackBar4.Value;
             Show3D();
-
         }
 
         private void Show3D()
         {
-
             Gl.glClear(Gl.GL_COLOR_BUFFER_BIT | Gl.GL_DEPTH_BUFFER_BIT);
             Gl.glLoadIdentity();
 
@@ -490,22 +479,30 @@ namespace Profiling
             PositeCamera();
 
             Gl.glCallList(GLList0);
-            Gl.glCallList(GLList1);
+            
+            DrawIntersectionLine1FromList();
+            DrawIntersectionLine2FromList();
+           
             PositeCamera();
-            Gl.glCallList(GLList2);
-
+            DrawDrill1();
+            PositeCamera();
+            DrawDrill2();
             anT.SwapBuffers();
+
+
+            //Gl.glCallList(GLList0);
+            //Gl.glCallList(GLList1);
+            //PositeCamera();
+            //Gl.glCallList(GLList2);
+
+
 
         }
 
         //Списки 3D обьектов
-        //GLList0 = 3d ось, линия пересечения
-        //GLList1 = колесо
-        //GLList2 = винтовая лестница
-
+        
         int GLList0, GLList1, GLList2, GLList3, GLList4;
 
-        //Показывает 3D списки
         private void RefreshGllList()
         {
 
@@ -518,7 +515,6 @@ namespace Profiling
             GLList0 = Gl.glGenLists(1);
             Gl.glNewList(GLList0, Gl.GL_COMPILE);
             Draw3DAxis();
-            //DrawIntersectLine();
             Gl.glEndList();
 
             GLList1 = Gl.glGenLists(1);
@@ -563,9 +559,8 @@ namespace Profiling
 
             Gl.glEnd();
         }
+        
 
-
-        //Строим винтовую лестницу
         private void DrawWireframeDrill1()
         {
             int i, j, Q1 = 31, Q2;
@@ -731,8 +726,75 @@ namespace Profiling
 
 
         }
+        
+        private void DrawWireframeDrill2()
+        {
+            int i, j, Q1 = 51, Q2;
+
+            Gl.glColor3f(0, 0, 0);
+            Gl.glLineWidth(1);
+            
+
+            MyRotate rotate = new MyRotate();
+            MyPoint tPoint = new MyPoint();
+            MyPoint tPoint2 = new MyPoint();
 
 
+            MyPoint[] arr1 = new MyPoint[64];
+            SetupArray(arr1);  ///проверить ?
+
+
+            MyPoint[] arr2 = new MyPoint[64];
+            SetupArray(arr2);
+
+            double H, h, dH;
+            H = 20;
+            dH = 2 * Math.PI * h2 / Q1;
+
+            double B1, dB;
+            B1 = -H / h2;
+            dB = 2 * Math.PI / Q1;
+
+            Q2 =(int)(2 * H / (dB * h2));
+
+            double L1, L2;
+
+            for (i = 0; i < Q2; i++)
+            {
+                L1 = B1 + dB * i;
+                L2 = B1 + dB * (i + 1);
+
+                h = -H + dH * i;
+
+
+                Gl.glBegin(Gl.GL_LINE_STRIP);
+                for (j = 0; j < act_quant; j++)
+                {
+                    Gl.glVertex3d(array1[j].X * Math.Cos(L1), array1[j].X * Math.Sin(L1), array1[j].Z + h);
+                }
+                Gl.glEnd();
+
+                if (i < (Q2 - 1))
+                {
+                    Gl.glBegin(Gl.GL_LINES);
+                    for (j = 0; j < act_quant; j++)
+                    {
+                        Gl.glVertex3d(array1[j].X * Math.Cos(L1), array1[j].X * Math.Sin(L1), array1[j].Z + h);
+                        Gl.glVertex3d(array1[j].X * Math.Cos(L2), array1[j].X * Math.Sin(L2), array1[j].Z - H + dH * (i + 1));
+                    }
+                    Gl.glEnd();
+                }
+
+                if (dB * i >= 2 * Math.PI)
+                {
+                    Gl.glBegin(Gl.GL_LINES);
+                    Gl.glVertex3d(array1[0].X * Math.Cos(L1), array1[0].X * Math.Sin(L1), array1[0].Z + h);
+                    Gl.glVertex3d(array1[0].X * Math.Cos(L1), array1[0].X * Math.Sin(L1), array1[0].Z + h - dH * Q1 + dZ);
+                    Gl.glEnd();
+                }
+            }
+        }
+        
         private void SetupArray(MyPoint[] arr)
         {
             for (int i = 0; i < arr.Length; i++)
@@ -742,22 +804,61 @@ namespace Profiling
             }
         }
 
-      
-       //TODO: добавить методы для рисования 2 винтовой линии, линий пересечения в 3D и 2D
-       
-        
-
-      
-
-        //Строим линию пересечения
-        private void DrawIntersectLine()
+        private void DrawDrill1()
         {
-            Gl.glColor3f(0, 0, 0.5f);
+            Gl.glRotatef((float)(-Math.Atan(arraySV[0].Y / arraySV[0].X) * 180 / Math.PI), 0, 0, 1);
+            Gl.glCallList(GLList1);
+        }
+
+        private void DrawDrill2()
+        {
+            Gl.glTranslated((R1 + R2), 0, 0);
+            Gl.glRotatef((float)(O * 180 / Math.PI), 1, 0, 0);
+            Gl.glCallList(GLList2);
+        }
+
+        private void DrawIntersectionLine1ForList()
+        {
+            Gl.glColor3f(0, 0, 1);
             Gl.glLineWidth(2);
+            Gl.glNormal3d(0, 0, 0);
+
             Gl.glBegin(Gl.GL_LINE_STRIP);
-            for (int i = 0; i < act_quant; i++) Gl.glVertex3d(array3D[i].X, array3D[i].Y, array3D[i].Z);
+            for (int i = 0; i < act_quant; i++)
+            {
+                Gl.glVertex3d(array4[i].X, array4[i].Y, array4[i].Z);
+            }
             Gl.glEnd();
         }
+        
+        private void DrawIntersectionLine2ForList()
+        {
+            Gl.glColor3f(0, 0, 1);
+            Gl.glLineWidth(2);
+            Gl.glNormal3d(0, 0, 0);
+
+            Gl.glBegin(Gl.GL_LINE_STRIP);
+            for (int i = 0; i < act_quant; i++)
+            {
+                Gl.glVertex3d(array3[i].X, array3[i].Y, array3[i].Z);
+            }
+            Gl.glEnd();
+        }
+
+        //from
+        private void DrawIntersectionLine1FromList()
+        {
+            Gl.glCallList(GLList3);
+        }
+
+        private void DrawIntersectionLine2FromList()
+        {
+            Gl.glTranslated((R1 + R2), 0, 0);
+            Gl.glRotatef((float)(O * 180 / Math.PI), 1, 0, 0);
+            Gl.glCallList(GLList4);
+        }
+
+
 
         //start params
         float camZ = 30, camY = 50, camR = 20;
@@ -848,7 +949,7 @@ namespace Profiling
 
         private void radMenuItem6_Click(object sender, EventArgs e)
         {
-            this.Close();
+            Close();
         }
 
         private void radMenuItem4_Click(object sender, EventArgs e)

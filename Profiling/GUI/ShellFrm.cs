@@ -36,5 +36,11 @@ namespace Profiling.GUI
             Theory theory = new Theory(pathToTheory);
             theory.Show();
         }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            new Form2().Show();
+            
+        }
     }
 }

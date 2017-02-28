@@ -136,7 +136,6 @@ C:\Users\Leo\Source\Repos\ProfilingSystem\Profiling\bin\Debug\System.Xml.dll
 C:\Users\Leo\Source\Repos\ProfilingSystem\Profiling\bin\Debug\System.Xml.Linq.dll
 C:\Users\Leo\Source\Repos\ProfilingSystem\Profiling\bin\Debug\Telerik.WinControls.xml
 C:\Users\Leo\Source\Repos\ProfilingSystem\Profiling\bin\Debug\Telerik.WinControls.UI.xml
-C:\Users\Leo\Source\Repos\ProfilingSystem\Profiling\obj\Debug\Profiling.csprojResolveAssemblyReference.cache
 C:\Users\Leo\Source\Repos\ProfilingSystem\Profiling\obj\Debug\Profiling.Form1.resources
 C:\Users\Leo\Source\Repos\ProfilingSystem\Profiling\obj\Debug\Profiling.GUI.About.resources
 C:\Users\Leo\Source\Repos\ProfilingSystem\Profiling\obj\Debug\Profiling.Properties.Resources.resources
@@ -147,3 +146,4 @@ C:\Users\Leo\Source\Repos\ProfilingSystem\Profiling\bin\Debug\Telerik.WinControl
 C:\Users\Leo\Source\Repos\ProfilingSystem\Profiling\bin\Debug\TelerikCommon.dll
 C:\Users\Leo\Source\Repos\ProfilingSystem\Profiling\obj\Debug\Profiling.GUI.Theory.resources
 C:\Users\Leo\Source\Repos\ProfilingSystem\Profiling\obj\Debug\Profiling.GUI.ShellFrm.resources
+C:\Users\Leo\Source\Repos\ProfilingSystem\Profiling\obj\Debug\Profiling.Form2.resources
