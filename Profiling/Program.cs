@@ -17,7 +17,7 @@ namespace Profiling
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new ShellFrm());
+            Application.Run(new Form2());
         }
     }
 }

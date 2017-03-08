@@ -45,7 +45,6 @@
             this.radioButton1 = new System.Windows.Forms.RadioButton();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.radGroupBox3 = new Telerik.WinControls.UI.RadGroupBox();
-            this.checkBox2 = new System.Windows.Forms.CheckBox();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.trackBar2 = new System.Windows.Forms.TrackBar();
             this.textBox7 = new System.Windows.Forms.TextBox();
@@ -139,7 +138,7 @@
             this.radPageView1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.radPageView1.Location = new System.Drawing.Point(3, 3);
             this.radPageView1.Name = "radPageView1";
-            this.radPageView1.SelectedPage = this.radPageViewPage2;
+            this.radPageView1.SelectedPage = this.radPageViewPage1;
             this.radPageView1.Size = new System.Drawing.Size(957, 369);
             this.radPageView1.TabIndex = 2;
             this.radPageView1.Text = "radPageView1";
@@ -312,7 +311,6 @@
             // radGroupBox3
             // 
             this.radGroupBox3.AccessibleRole = System.Windows.Forms.AccessibleRole.Grouping;
-            this.radGroupBox3.Controls.Add(this.checkBox2);
             this.radGroupBox3.Controls.Add(this.textBox2);
             this.radGroupBox3.Controls.Add(this.trackBar2);
             this.radGroupBox3.Controls.Add(this.textBox7);
@@ -326,17 +324,6 @@
             this.radGroupBox3.TabIndex = 20;
             this.radGroupBox3.Text = "Радиус 2";
             // 
-            // checkBox2
-            // 
-            this.checkBox2.AutoSize = true;
-            this.checkBox2.Location = new System.Drawing.Point(18, 25);
-            this.checkBox2.Name = "checkBox2";
-            this.checkBox2.Size = new System.Drawing.Size(79, 17);
-            this.checkBox2.TabIndex = 5;
-            this.checkBox2.Text = "Включить";
-            this.checkBox2.UseVisualStyleBackColor = true;
-            this.checkBox2.CheckedChanged += new System.EventHandler(this.checkBox2_CheckedChanged);
-            // 
             // textBox2
             // 
             this.textBox2.Location = new System.Drawing.Point(203, 44);
@@ -347,7 +334,6 @@
             // 
             // trackBar2
             // 
-            this.trackBar2.Enabled = false;
             this.trackBar2.Location = new System.Drawing.Point(28, 44);
             this.trackBar2.Maximum = 100;
             this.trackBar2.Name = "trackBar2";
@@ -399,12 +385,12 @@
             this.radGroupBox2.Controls.Add(this.textBox5);
             this.radGroupBox2.Controls.Add(this.label2);
             this.radGroupBox2.Controls.Add(this.label1);
-            this.radGroupBox2.HeaderText = "Радуис 1";
+            this.radGroupBox2.HeaderText = "Радиус 1";
             this.radGroupBox2.Location = new System.Drawing.Point(6, 20);
             this.radGroupBox2.Name = "radGroupBox2";
             this.radGroupBox2.Size = new System.Drawing.Size(269, 126);
             this.radGroupBox2.TabIndex = 19;
-            this.radGroupBox2.Text = "Радуис 1";
+            this.radGroupBox2.Text = "Радиус 1";
             // 
             // trackBar1
             // 
@@ -768,7 +754,6 @@
         private System.Windows.Forms.RadioButton radioButton2;
         private System.Windows.Forms.RadioButton radioButton1;
         private System.Windows.Forms.RichTextBox richTextBox1;
-        private System.Windows.Forms.CheckBox checkBox2;
         private System.Windows.Forms.TextBox textBox3;
         private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.TextBox textBox1;

@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Telerik.Collections.Generic;
 
 namespace Profiling.Core
 {
@@ -18,6 +19,8 @@ namespace Profiling.Core
             this.Z = z;
 
         }
+
+
 
         public void Substr (MyPoint point2)
         {
@@ -50,7 +53,6 @@ namespace Profiling.Core
 
             return newPoint;
 
-         //   return new MyPoint(this.X, this.Y, this.Z);
         }
 
         public void VectorMult(MyPoint p1, MyPoint p2)

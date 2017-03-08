@@ -147,3 +147,4 @@ C:\Users\Leo\Source\Repos\ProfilingSystem\Profiling\bin\Debug\TelerikCommon.dll
 C:\Users\Leo\Source\Repos\ProfilingSystem\Profiling\obj\Debug\Profiling.GUI.Theory.resources
 C:\Users\Leo\Source\Repos\ProfilingSystem\Profiling\obj\Debug\Profiling.GUI.ShellFrm.resources
 C:\Users\Leo\Source\Repos\ProfilingSystem\Profiling\obj\Debug\Profiling.Form2.resources
+C:\Users\Leo\Source\Repos\ProfilingSystem\Profiling\obj\Debug\Profiling.csprojResolveAssemblyReference.cache

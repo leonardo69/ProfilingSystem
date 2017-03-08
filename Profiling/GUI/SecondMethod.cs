@@ -29,15 +29,17 @@ namespace Profiling
         bool visDrill2 = true;
         double w, R1, R2, Ro, h1, h2, O, dZ, U, F1; //параметры  модели
 
-        bool d_link = true, illumination = true;//для отображения
-        
+        bool d_link = true;//для отображения
+
 
         MyPoint[] array1;
         MyPoint[] array3;
         MyPoint[] array4;
         MyPoint[] arraySV;
         MyPoint[] arrayO;
-        MyPoint C;
+
+  
+        
 
 
         float firstStyle;
@@ -49,7 +51,7 @@ namespace Profiling
         {
             InitializeComponent();
             anT.InitializeContexts();
-            //InitStartParams();
+            InitStartParams();
             firstStyle = tableLayoutPanel1.RowStyles[1].Height;
             secondStyle = tableLayoutPanel1.RowStyles[2].Height;
         }
@@ -58,22 +60,20 @@ namespace Profiling
         {
             //инициализируем переменные для отображения
 
-            FirstForm = true;
-            View3D = false;
-            act_quant = 7;
-            d_link = true;
+           // FirstForm = true;
+           // View3D = false;
+            act_quant = 51;
+           // d_link = true;
            // d_in = 1; // угол
-
-            illumination = false;
+           
       
 
-            ///переменные для расчёта стартового
+            //переменные для расчёта стартового
 
             w = Math.PI*45/180;
             R1 = 3;
             R2 = 12.5;
-            
-      
+
 
             //инициализируем списки
             array1 = new MyPoint[act_quant];
@@ -82,6 +82,7 @@ namespace Profiling
             arraySV = new MyPoint[act_quant];
             arrayO = new MyPoint[act_quant];
 
+            
             for (int i = 0; i < act_quant; i++)
             {
                 array1[i] = new MyPoint();
@@ -91,18 +92,29 @@ namespace Profiling
                 arrayO[i] = new MyPoint();
             }
 
-
             //настраиваем положение трекбаров
-            trackBar1.Value = trackBar2.Maximum / 2;
+            trackBar1.Value = trackBar1.Maximum / 2;
+            R1 = double.Parse(textBox4.Text) + (double.Parse(textBox5.Text) - double.Parse(textBox4.Text)) * trackBar1.Value / trackBar1.Maximum;
+            textBox1.Text = R1.ToString();
+            textBox6.Text = R1.ToString();
+
             trackBar2.Value = trackBar2.Maximum / 2;
+            R2 = double.Parse(textBox6.Text) +
+                (double.Parse(textBox7.Text) - double.Parse(textBox6.Text)) * trackBar2.Value / trackBar2.Maximum;
+            textBox2.Text = R2.ToString();
+
             trackBar3.Value = trackBar3.Maximum / 2;
+
             
+        
             trackBar3_Scroll(null, null);
         }
-        
+
+      
+
         #region Трекеры
 
-        //обработчики: берёт значение из интерфейса и передаёт переменной
+       
 
         private void trackBar1_Scroll(object sender, EventArgs e)
         {
@@ -111,6 +123,11 @@ namespace Profiling
                 (double.Parse(textBox5.Text) - double.Parse(textBox4.Text)) * trackBar1.Value / trackBar1.Maximum;
             textBox1.Text = R1.ToString();
             textBox6.Text = R1.ToString();
+
+            R2 = double.Parse(textBox6.Text) +
+                (double.Parse(textBox7.Text) - double.Parse(textBox6.Text)) * trackBar2.Value / trackBar2.Maximum;
+            textBox2.Text = R2.ToString();
+
             RefreshPoints();
         }
 
@@ -133,32 +150,16 @@ namespace Profiling
             RefreshPoints();
         }
 
-        private void checkBox2_CheckedChanged(object sender, EventArgs e)
-        {
-            if (checkBox2.Checked)
-            {
-                trackBar2.Enabled = true;
-                d_link = false;
-            }
-            else
-            {
-                trackBar2.Enabled = false;
-                d_link = true;
-            }
-
-            //пересчитать
-        }
-
+      
 
         #endregion
 
         #region  Вычислительная часть
 
 
-        //Главный метод для расчёта мат модели. Вычисляет значения переменных и выводит на экран в текстбокс
 
-        double Ln = 1.154338843;
-        double Le = 1.98725381;
+        readonly double Ln = 1.154338843;
+        readonly double Le = 1.98725381;
 
 
         public void CalcXY()
@@ -167,17 +168,19 @@ namespace Profiling
                Xdn, Ydn, Gn, Ltn, cosLtn, Y1n, Zn, L1, L2, U, X2_, Y2_, Z2_, O, cosO, sinO, X2t, Y2t,
                cosZ2_h2, sinZ2_h2, arctgT;
 
+        
+           
            // double R1 , R2 , w;
-
+            double R1 = this.R1, R2 = this.R2, w = this.w;  //TODO: убрать R2=3 
             r = 2 * R1;
             a1 = r + 0.4168 * r / 2;
-            h1  = R1 / Math.Tan(w);
+            this.h1 = h1  = R1 / Math.Tan(w);
             B = Math.Atan(h1 / R1);
             B1 = Math.PI / 2 - B;
-            O =  B + Math.Asin(R1 * 0.5 * Math.Sin(B) / R2);
-            h2 = R2 * Math.Tan(O - B);
+            this.O = O =  B + Math.Asin(R1 * 0.5 * Math.Sin(B) / R2);
+            this.h2 = h2 = R2 * Math.Tan(O - B);
             B2 = Math.PI / 2 - (O - B);
-            U = R2 * Math.Cos(B2) / (R1 * Math.Cos(B1));
+            this.U = U = R2 * Math.Cos(B2) / (R1 * Math.Cos(B1));
             LL = R1 + R2;
 
             Xdn = a1 - r * Math.Sin(Ln);
@@ -239,20 +242,22 @@ namespace Profiling
                 array1[i].Z = Z2_ - h2 * arctgT;
                 array1[i].Y = 0;
             }
-            dZ = array1[act_quant - 1].Z - array1[0].Z;
+
+            
+            this.dZ = dZ = array1[act_quant - 1].Z - array1[0].Z;
         }
 
         public void RefreshPoints()
         {
-            
+
             double L, dL;
             int i;
-            int act_quant = this.act_quant;
+            int act_quant = 51;
             richTextBox1.Clear();
-            string str=string.Empty;
+            string str;
 
-            str+="L\t\tX0\t\tZ0";
-            str+="";
+            richTextBox1.Text += "L\t\tX0\t\tZ0";
+            richTextBox1.Text += "\n\n";
 
             dL = (Le - Ln) / (act_quant - 1);
 
@@ -262,19 +267,20 @@ namespace Profiling
             {
                 L = dL * i + Ln;
 
-                str += L+"\t\t" + array1[i].X + "\t\t"+ array1[i].Z;
-                
-                richTextBox1.Text+=str;
+               // str =""+ Math.Round(L,6) + "\t\t" + Math.Round(array1[i].X,6) + "\t\t" + Math.Round(array1[i].Z,6)+"\n";
+                str =String.Format("{0:0.000000}\t\t{1:0.000000}\t\t{2:0.000000}", Math.Round(L,6),Math.Round(array1[i].X,6),Math.Round(array1[i].Z,6))+"\n";
+                richTextBox1.Text += str;
+
             }
 
-            this.C = new MyPoint();
-            MyPoint a, b, c ;
+            MyPoint C = new MyPoint();
+            MyPoint a, b, c;
             double Ro;
             C.Set(0, 0, 0);
 
-            a = array1[0];
-            b = array1[act_quant / 4]; b.Substr(a);
-            c = array1[act_quant / 2]; c.Substr(a);
+            a = array1[0].Clone();
+            b = array1[act_quant / 4].Clone(); b.Substr(a);
+            c = array1[act_quant / 2].Clone(); c.Substr(a);
 
             C.X = 2 * (b.Z * c.X - c.Z * b.X);
             if ((C.X > -0.0000001) && (C.X < 0.00000001)) C.X = 999999999;
@@ -284,12 +290,12 @@ namespace Profiling
             if ((C.Z > -0.0000001) && (C.Z < 0.00000001)) C.Z = 999999999;
             else C.Z = (b.X * b.X - 2 * b.X * C.X + b.Z * b.Z) / C.Z;
 
-            Ro =  Math.Sqrt(C.X * C.X + C.Z * C.Z);
+            Ro = Math.Sqrt(C.X * C.X + C.Z * C.Z);
             C.Add(a);
 
             for (i = 0; i < act_quant / 2; i++)
             {
-                a = array1[i]; a.Substr(C);
+                a = array1[i].Clone(); a.Substr(C);
                 a.Normaliz();
                 a.MultConst(Ro);
                 a.Add(C);
@@ -297,7 +303,7 @@ namespace Profiling
                 arrayO[i].X = a.X;
             }
 
-        
+
 
 
             //переменные, которые выводятся в результат
@@ -308,20 +314,25 @@ namespace Profiling
 
             richTextBox1.Text += "\n";
             str = "Радиус аппроксимирующих окружностей = " + Math.Round(Ro, 6) + "\n";
-            richTextBox1.Text += str; 
-
-            richTextBox1.Text += "\n";
-            str = "Коорд. окр. 1:   Z="+C.Z+"  X="+ C.X;
             richTextBox1.Text += str;
 
-            richTextBox1.Text += "\n";
-            str ="Коорд. окр. 2:   Z="+ (-C.Z + 2 * array1[act_quant / 2].Z) + "  X="+ C.X;
+            str = "Коорд. окр. 1:   Z=" +Math.Round(C.Z,6) + "  X=" + Math.Round(C.X,6)+ "\n";
+            richTextBox1.Text += str;
+
+
+            int numberElement = act_quant/2;
+            double temp = array1[numberElement].Z;
+            double doub = 2*temp;
+            double cs = -C.Z;
+
+            double coord2 = -C.Z + 2*array1[act_quant/2].Z;
+            str = "Коорд. окр. 2:   Z=" + Math.Round(coord2,6) + "  X=" + Math.Round(C.X,6)+ "\n";
             richTextBox1.Text += str;
 
             str = "Сумма максимальных отклонение = " + Math.Round(CalcE(), 6);
             richTextBox1.Text += str;
 
-             
+
             DrawChart();
 
             Show3D();
@@ -362,12 +373,18 @@ namespace Profiling
            
             for (int i = 0; i < act_quant; i++)
             {
-                // добавим в список точку
-                list.Add(arrayO[i].Z, arrayO[i].X);
-                list2.Add(-arrayO[i].Z + 2 * array1[act_quant / 2].Z, arrayO[i].X);
                 list3.Add(array1[i].Z, array1[i].X);
             }
 
+            for (int i = 0; i < act_quant/2; i++)
+            {
+                list.Add(arrayO[i].Z, arrayO[i].X);
+            }
+
+            for (int i = 0; i < act_quant/2; i++)
+            {
+                list2.Add(-arrayO[i].Z + 2 * array1[act_quant / 2].Z, arrayO[i].X);
+            }
    
             LineItem myCurve = pane.AddCurve("Line1", list, Color.Black, SymbolType.None);
             LineItem myCurve2 = pane.AddCurve("Line2", list2, Color.Blue, SymbolType.None);
@@ -466,7 +483,7 @@ namespace Profiling
         {
             //angel = trackBar4.Value;
             camR = trackBar4.Value;
-            Show3D();
+         //   Show3D();
         }
 
         private void Show3D()
@@ -479,15 +496,15 @@ namespace Profiling
             PositeCamera();
 
             Gl.glCallList(GLList0);
-            
+
             DrawIntersectionLine1FromList();
             DrawIntersectionLine2FromList();
-           
+
             PositeCamera();
             DrawDrill1();
             PositeCamera();
             DrawDrill2();
-            anT.SwapBuffers();
+            
 
 
             //Gl.glCallList(GLList0);
@@ -495,7 +512,7 @@ namespace Profiling
             //PositeCamera();
             //Gl.glCallList(GLList2);
 
-
+            anT.SwapBuffers();
 
         }
 
@@ -574,7 +591,7 @@ namespace Profiling
 
 
             MyPoint[] arr1 = new MyPoint[64];
-            SetupArray(arr1);  ///проверить ?
+            SetupArray(arr1);  //проверить ?
 
 
             MyPoint[] arr2 = new MyPoint[64];
@@ -741,7 +758,7 @@ namespace Profiling
 
 
             MyPoint[] arr1 = new MyPoint[64];
-            SetupArray(arr1);  ///проверить ?
+            SetupArray(arr1);  
 
 
             MyPoint[] arr2 = new MyPoint[64];
@@ -884,7 +901,7 @@ namespace Profiling
 
         private void CopyArray(MyPoint[] arr1, MyPoint[] arr2)
         {
-            for (int i = 0; i < act_quant; i++) arr1[i] = arr2[i];
+            for (int i = 0; i < act_quant; i++) arr1[i] = arr2[i].Clone();
         }
 
         #endregion
