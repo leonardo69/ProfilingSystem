@@ -6,15 +6,15 @@ using System.Threading.Tasks;
 
 namespace Profiling.Core
 {
-    //Участвует в построении 3Д модели
-    class MyRotate
+    
+    public class Rotate
     {
-        //размерность матрицы
+       
 
         double[] matrix = new double[16];
 
 
-        //Операции матрицы поворота
+      
         public void SetRotate(double angle, double x, double y, double z)
         {
             double c, s;
@@ -38,8 +38,8 @@ namespace Profiling.Core
 
         }
 
-        //Пересчитать новое положение точек
-        public void TransformPoint(MyPoint in_point, MyPoint out_point)
+   
+        public void TransformPoint(Point in_point, Point out_point)
         {
             out_point.X = matrix[0] * in_point.X +
                             matrix[4] * in_point.Y +

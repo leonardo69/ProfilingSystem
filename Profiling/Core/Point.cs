@@ -7,55 +7,52 @@ using Telerik.Collections.Generic;
 
 namespace Profiling.Core
 {
-    //Участвует в построении профиля
-    class MyPoint
+   
+    public class Point
     {
         public double X, Y, Z;
 
         public void Set (double x, double y, double z)
         {
-            this.X = x;
-            this.Y = y;
-            this.Z = z;
-
+            X = x;
+            Y = y;
+            Z = z;
         }
 
-
-
-        public void Substr (MyPoint point2)
+        public void Substr (Point point2)
         {
-            this.X -= point2.X;
-            this.Y -= point2.Y;
-            this.Z -= point2.Z;
+            X -= point2.X;
+            Y -= point2.Y;
+            Z -= point2.Z;
         }
 
-        public void Add(MyPoint point2)
+        public void Add(Point point2)
         {
-            this.X += point2.X;
-            this.Y += point2.Y;
-            this.Z += point2.Z;
+            X += point2.X;
+            Y += point2.Y;
+            Z += point2.Z;
         }
 
         public void MultConst(double k)
         {
-            this.X *= k;
-            this.Y *= k;
-            this.Z *= k;
+            X *= k;
+            Y *= k;
+            Z *= k;
 
         }
 
-        public MyPoint Clone()
+        public Point Clone()
         {
-            MyPoint newPoint = new MyPoint();
-            newPoint.X = this.X;
-            newPoint.Y = this.Y;
-            newPoint.Z = this.Z;
+            Point newPoint = new Point();
+            newPoint.X = X;
+            newPoint.Y = Y;
+            newPoint.Z = Z;
 
             return newPoint;
 
         }
 
-        public void VectorMult(MyPoint p1, MyPoint p2)
+        public void VectorMult(Point p1, Point p2)
         {
             X = (p1.Y * p2.Z) - (p2.Y * p1.Z);
             Y = -(p1.X * p2.Z) + (p2.X * p1.Z);
@@ -66,9 +63,9 @@ namespace Profiling.Core
 
         //вычисление нормали к плосоксти, заданной 3 точками
 
-        public void NPlane(MyPoint p1, MyPoint p2, MyPoint p3)
+        public void NPlane(Point p1, Point p2, Point p3)
         {
-            MyPoint v1, v2;
+            Point v1, v2;
             v1 = v2 = p1;
             v1.Substr(p2); v1.Normaliz();
             v2.Substr(p3); v2.Normaliz();

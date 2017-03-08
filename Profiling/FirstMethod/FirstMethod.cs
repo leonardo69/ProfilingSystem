@@ -18,6 +18,7 @@ using Profiling.GUI;
 using Tao.OpenGl;
 using Tao.FreeGlut;
 using Tao.Platform.Windows;
+using Point = Profiling.Core.Point;
 
 namespace Profiling
 {
@@ -36,10 +37,10 @@ namespace Profiling
         bool d_link = true, illumination = true;//для отображения
         bool wheel_vis = true, drill_vis = true;
 
-        MyPoint[] array;
-        MyPoint[] arrayO;
-        MyPoint[] arraySV;
-        MyPoint[] array3D;
+        Point[] array;
+        Point[] arrayO;
+        Point[] arraySV;
+        Point[] array3D;
 
 
         float firstStyle;
@@ -47,7 +48,6 @@ namespace Profiling
 
 #endregion
 
-        //конструктор (метод который выполняется первым делом и настраивает интерфейс программы)
         public Form1()
         {
             InitializeComponent();
@@ -80,17 +80,17 @@ namespace Profiling
             R = 0.5;
 
             //инициализируем списки
-            array = new MyPoint[act_quant];
-            arrayO = new MyPoint[act_quant];
-            arraySV = new MyPoint[act_quant];
-            array3D = new MyPoint[act_quant];
+            array = new Point[act_quant];
+            arrayO = new Point[act_quant];
+            arraySV = new Point[act_quant];
+            array3D = new Point[act_quant];
 
             for (int i = 0; i < act_quant; i++)
             {
-                array[i] = new MyPoint();
-                arrayO[i] = new MyPoint();
-                arraySV[i] = new MyPoint();
-                array3D[i] = new MyPoint();
+                array[i] = new Point();
+                arrayO[i] = new Point();
+                arraySV[i] = new Point();
+                array3D[i] = new Point();
             }
 
 
@@ -185,7 +185,7 @@ namespace Profiling
                 L = dL * i + L0;
 
                 Yn(L, O, R, out Tt, out Rt, ref array3D[i], ref arraySV[i]);   //вызов функции Yn
-                str = "" + Math.Round(L, 6) + "\t\t" + Math.Round(Tt, 6) + "\t\t" + Math.Round(Rt, 6) + "\n";
+                str = String.Format("{0:0.000000}\t\t{1:0.000000}               {2:0.000000}", Math.Round(L, 6), Math.Round(Tt, 6), Math.Round(Rt, 6)) + "\n";
                 richTextBox1.Text += str;
 
                 //заполняем массив точками, по которым будет строиться профиль
@@ -262,7 +262,7 @@ namespace Profiling
         //Yn просмотреть  и передачу по ссылке
 
         //Связана с RefreshPoints
-        double Yn(double L, double w, double R, out double Tt, out double Rt, ref MyPoint Point3D, ref MyPoint PSV)
+        double Yn(double L, double w, double R, out double Tt, out double Rt, ref Point Point3D, ref Point PSV)
         {
             double TT, RT, Ybeg, Yend, Ymid, Fbeg, Fend, Fmid, B;
             //выходные параметры TT, RT 
@@ -305,7 +305,7 @@ namespace Profiling
 
 
         //Связана с Yn
-        double F(double L, double w, double R, double Yn, out double Tt, out double Rt, MyPoint P3D, MyPoint PSV)
+        double F(double L, double w, double R, double Yn, out double Tt, out double Rt, Point P3D, Point PSV)
         {
             double a1, r, Xtd, Ytd, G, Lt, d, h, Rn, tga, X_, Y_, Z_, bn, X, Y, Z, O, A, B, C, D;
 
@@ -582,16 +582,16 @@ namespace Profiling
             Gl.glColor3f(0, 0, 0);
             Gl.glLineWidth(1);
 
-            MyRotate rotate = new MyRotate();
-            MyPoint tPoint = new MyPoint();
-            MyPoint tPoint2 = new MyPoint();
+            Rotate rotate = new Rotate();
+            Point tPoint = new Point();
+            Point tPoint2 = new Point();
 
 
-            MyPoint[] arr1;// = new MyPoint[64];
+            Point[] arr1;// = new Point[64];
             // SetupArray(arr1);
 
 
-            MyPoint[] arr2 = new MyPoint[64];
+            Point[] arr2 = new Point[64];
             SetupArray(arr2);
 
             //   O = Math.PI * 1 / 180;
@@ -666,11 +666,11 @@ namespace Profiling
         }
 
 
-        private void SetupArray(MyPoint[] arr)
+        private void SetupArray(Point[] arr)
         {
             for (int i = 0; i < arr.Length; i++)
             {
-                MyPoint point = new MyPoint();
+                Point point = new Point();
                 arr[i] = point;
             }
         }
@@ -757,7 +757,7 @@ namespace Profiling
             Gl.glRotatef(camZ, 0, 0, 1);
         }
 
-        private void CopyArray(MyPoint[] arr1, MyPoint[] arr2)
+        private void CopyArray(Point[] arr1, Point[] arr2)
         {
             for (int i = 0; i < act_quant; i++) arr1[i] = arr2[i];
         }

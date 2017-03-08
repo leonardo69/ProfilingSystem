@@ -100,18 +100,20 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Core\MyRotate.cs" />
-    <Compile Include="Core\MyPoint.cs" />
-    <Compile Include="GUI\SecondMethod.cs">
+    <Compile Include="Core\Rotate.cs" />
+    <Compile Include="Core\Point.cs" />
+    <Compile Include="SecondMethod\Calculator.cs" />
+    <Compile Include="SecondMethod\OpenGLHelper.cs" />
+    <Compile Include="SecondMethod\SecondMethod.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="GUI\SecondMethod.Designer.cs">
+    <Compile Include="SecondMethod\SecondMethod.Designer.cs">
       <DependentUpon>SecondMethod.cs</DependentUpon>
     </Compile>
-    <Compile Include="GUI\FirstMethod.cs">
+    <Compile Include="FirstMethod\FirstMethod.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="GUI\FirstMethod.Designer.cs">
+    <Compile Include="FirstMethod\FirstMethod.Designer.cs">
       <DependentUpon>FirstMethod.cs</DependentUpon>
     </Compile>
     <Compile Include="GUI\About.cs">
@@ -134,10 +136,10 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="GUI\SecondMethod.resx">
+    <EmbeddedResource Include="SecondMethod\SecondMethod.resx">
       <DependentUpon>SecondMethod.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="GUI\FirstMethod.resx">
+    <EmbeddedResource Include="FirstMethod\FirstMethod.resx">
       <DependentUpon>FirstMethod.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GUI\About.resx">

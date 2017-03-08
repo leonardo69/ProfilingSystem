@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ShellFrm));
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
@@ -48,11 +49,11 @@
             this.groupBox1.Size = new System.Drawing.Size(584, 133);
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Метод 1";
+            this.groupBox1.Text = "Профилирование дискового инструмента";
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(442, 34);
+            this.button2.Location = new System.Drawing.Point(330, 32);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(110, 71);
             this.button2.TabIndex = 0;
@@ -62,7 +63,7 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(300, 34);
+            this.button1.Location = new System.Drawing.Point(153, 32);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(110, 71);
             this.button1.TabIndex = 0;
@@ -79,11 +80,11 @@
             this.groupBox2.Size = new System.Drawing.Size(584, 177);
             this.groupBox2.TabIndex = 1;
             this.groupBox2.TabStop = false;
-            this.groupBox2.Text = "Метод 2";
+            this.groupBox2.Text = "Профилирование червячного инструмента";
             // 
             // button4
             // 
-            this.button4.Location = new System.Drawing.Point(442, 57);
+            this.button4.Location = new System.Drawing.Point(330, 57);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(110, 71);
             this.button4.TabIndex = 0;
@@ -93,7 +94,7 @@
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(300, 57);
+            this.button3.Location = new System.Drawing.Point(153, 57);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(110, 71);
             this.button3.TabIndex = 0;
@@ -109,6 +110,7 @@
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "ShellFrm";
@@ -117,7 +119,7 @@
             // 
             this.RootElement.ApplyShapeToControl = true;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Оболочка";
+            this.Text = "Дипломная работа. Профилирование";
             this.groupBox1.ResumeLayout(false);
             this.groupBox2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this)).EndInit();
