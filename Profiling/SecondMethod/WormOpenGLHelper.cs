@@ -4,7 +4,7 @@ using Tao.OpenGl;
 
 namespace Profiling
 {
-    public class OpenGLHelper
+    public class WormOpenGLHelper
     {
         private Form2 _form2;
         public int GLList0;
@@ -13,7 +13,7 @@ namespace Profiling
         private int GLList3;
         private int GLList4;
 
-        public OpenGLHelper(Form2 form2)
+        public WormOpenGLHelper(Form2 form2)
         {
             _form2 = form2;
         }

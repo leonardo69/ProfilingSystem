@@ -6,13 +6,13 @@ using Point = Profiling.Core.Point;
 
 namespace Profiling
 {
-    public class Calculator
+    public class WormCalculator
     {
         private Form2 _form2;
         private readonly double Ln = 1.154338843;
         private readonly double Le = 1.98725381;
 
-        public Calculator(Form2 form2)
+        public WormCalculator(Form2 form2)
         {
             _form2 = form2;
         }

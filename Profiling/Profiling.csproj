@@ -102,8 +102,10 @@
   <ItemGroup>
     <Compile Include="Core\Rotate.cs" />
     <Compile Include="Core\Point.cs" />
-    <Compile Include="SecondMethod\Calculator.cs" />
-    <Compile Include="SecondMethod\OpenGLHelper.cs" />
+    <Compile Include="FirstMethod\DiskCalculator.cs" />
+    <Compile Include="FirstMethod\DiskOpenGLHelper.cs" />
+    <Compile Include="SecondMethod\WormCalculator.cs" />
+    <Compile Include="SecondMethod\WormOpenGLHelper.cs" />
     <Compile Include="SecondMethod\SecondMethod.cs">
       <SubType>Form</SubType>
     </Compile>

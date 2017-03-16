@@ -20,7 +20,7 @@ namespace Profiling.GUI
         private void button2_Click(object sender, EventArgs e)
         {
             new Form1().Show();
-            Hide();
+           // Hide();
         }
 
         private void button1_Click(object sender, EventArgs e)

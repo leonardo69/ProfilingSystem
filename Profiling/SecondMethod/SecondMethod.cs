@@ -44,16 +44,16 @@ namespace Profiling
         {
             InitializeComponent();
             anT.InitializeContexts();
-            Calculator = new Calculator(this);
-            OpenGlHelper = new OpenGLHelper(this);
+            WormCalculator = new WormCalculator(this);
+            WormOpenGlHelper = new WormOpenGLHelper(this);
             InitStartParams();
             firstStyle = tableLayoutPanel1.RowStyles[1].Height;
             secondStyle = tableLayoutPanel1.RowStyles[2].Height;
         }
 
-        public OpenGLHelper OpenGlHelper { get; }
+        public WormOpenGLHelper WormOpenGlHelper { get; }
 
-        public Calculator Calculator { get; }
+        public WormCalculator WormCalculator { get; }
 
 
         private void InitStartParams()
@@ -120,14 +120,14 @@ namespace Profiling
                  (double.Parse(textBox7.Text) - double.Parse(textBox6.Text))*trackBar2.Value/trackBar2.Maximum;
             textBox2.Text = R2.ToString();
 
-            Calculator.RefreshPoints();
+            WormCalculator.RefreshPoints();
         }
 
         private void trackBar3_Scroll(object sender, EventArgs e)
         {
             w = Math.PI*(trackBar3.Value*0.88 + 1)/180;
             textBox3.Text = (double.Parse(trackBar3.Value.ToString())*0.88 + 1).ToString();
-            Calculator.RefreshPoints();
+            WormCalculator.RefreshPoints();
         }
 
         private void trackBar2_Scroll(object sender, EventArgs e)
@@ -136,7 +136,7 @@ namespace Profiling
                  (double.Parse(textBox7.Text) - double.Parse(textBox6.Text))*trackBar2.Value/trackBar2.Maximum;
             textBox2.Text = R2.ToString();
 
-            Calculator.RefreshPoints();
+            WormCalculator.RefreshPoints();
         }
 
         #endregion
@@ -146,13 +146,13 @@ namespace Profiling
         private void radioButton1_CheckedChanged(object sender, EventArgs e)
         {
             FirstForm = true;
-            Calculator.RefreshPoints();
+            WormCalculator.RefreshPoints();
         }
 
         private void radioButton2_CheckedChanged(object sender, EventArgs e)
         {
             FirstForm = false;
-            Calculator.RefreshPoints();
+            WormCalculator.RefreshPoints();
         }
 
 
@@ -228,19 +228,19 @@ namespace Profiling
             Gl.glClear(Gl.GL_COLOR_BUFFER_BIT | Gl.GL_DEPTH_BUFFER_BIT);
             Gl.glLoadIdentity();
 
-            OpenGlHelper.RefreshGllList();
+            WormOpenGlHelper.RefreshGllList();
 
             PositeCamera();
 
-            Gl.glCallList(OpenGlHelper.GLList0);
+            Gl.glCallList(WormOpenGlHelper.GLList0);
 
-            OpenGlHelper.DrawIntersectionLine1FromList();
-            OpenGlHelper.DrawIntersectionLine2FromList();
+            WormOpenGlHelper.DrawIntersectionLine1FromList();
+            WormOpenGlHelper.DrawIntersectionLine2FromList();
 
             PositeCamera();
-            OpenGlHelper.DrawDrill1();
+            WormOpenGlHelper.DrawDrill1();
             PositeCamera();
-            OpenGlHelper.DrawDrill2();
+            WormOpenGlHelper.DrawDrill2();
 
             anT.SwapBuffers();
         }
