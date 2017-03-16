@@ -85,6 +85,7 @@
             this.commandBarSeparator2 = new Telerik.WinControls.UI.CommandBarSeparator();
             this.commandBarButton4 = new Telerik.WinControls.UI.CommandBarButton();
             this.radMenu1 = new Telerik.WinControls.UI.RadMenu();
+            this.radMenuItem8 = new Telerik.WinControls.UI.RadMenuItem();
             this.tableLayoutPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.radPageView1)).BeginInit();
             this.radPageView1.SuspendLayout();
@@ -549,7 +550,8 @@
             this.radMenuItem2.Items.AddRange(new Telerik.WinControls.RadItem[] {
             this.radMenuItem5,
             this.radMenuItem7,
-            this.radMenuSeparatorItem1});
+            this.radMenuSeparatorItem1,
+            this.radMenuItem8});
             this.radMenuItem2.Name = "radMenuItem2";
             this.radMenuItem2.Text = "Сервис";
             // 
@@ -680,6 +682,12 @@
             this.radMenu1.TabIndex = 3;
             this.radMenu1.Text = "radMenu1";
             // 
+            // radMenuItem8
+            // 
+            this.radMenuItem8.Name = "radMenuItem8";
+            this.radMenuItem8.Text = "Открыть 3D";
+            this.radMenuItem8.Click += new System.EventHandler(this.radMenuItem8_Click);
+            // 
             // Form2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -793,6 +801,7 @@
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label8;
         private Telerik.WinControls.UI.RadMenu radMenu1;
+        private Telerik.WinControls.UI.RadMenuItem radMenuItem8;
     }
 }
 

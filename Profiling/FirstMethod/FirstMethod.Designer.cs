@@ -608,6 +608,7 @@
             // 
             this.radMenuItem8.Name = "radMenuItem8";
             this.radMenuItem8.Text = "Модель диска Solidworks";
+            this.radMenuItem8.Click += new System.EventHandler(this.radMenuItem8_Click);
             // 
             // radMenuItem3
             // 
@@ -724,7 +725,6 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Профилирование дискового инструмента";
             this.Load += new System.EventHandler(this.Form1_Load);
-            this.Resize += new System.EventHandler(DiskOpenGlHelper.Form1_Resize);
             this.tableLayoutPanel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.radPageView1)).EndInit();
             this.radPageView1.ResumeLayout(false);

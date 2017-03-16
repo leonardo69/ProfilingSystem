@@ -362,6 +362,11 @@ namespace Profiling
 
         }
 
+        private void radMenuItem8_Click(object sender, EventArgs e)
+        {
+            SWCore sw = new SWCore();
+            sw.Open3DModel("test");
+        }
 
         private readonly DiskOpenGLHelper _diskOpenGlHelper;
 
