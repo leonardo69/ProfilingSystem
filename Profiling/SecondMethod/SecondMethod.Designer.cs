@@ -73,6 +73,7 @@
             this.radMenuItem5 = new Telerik.WinControls.UI.RadMenuItem();
             this.radMenuItem7 = new Telerik.WinControls.UI.RadMenuItem();
             this.radMenuSeparatorItem1 = new Telerik.WinControls.UI.RadMenuSeparatorItem();
+            this.radMenuItem8 = new Telerik.WinControls.UI.RadMenuItem();
             this.radMenuItem3 = new Telerik.WinControls.UI.RadMenuItem();
             this.radMenuItem4 = new Telerik.WinControls.UI.RadMenuItem();
             this.radStatusStrip1 = new Telerik.WinControls.UI.RadStatusStrip();
@@ -85,7 +86,6 @@
             this.commandBarSeparator2 = new Telerik.WinControls.UI.CommandBarSeparator();
             this.commandBarButton4 = new Telerik.WinControls.UI.CommandBarButton();
             this.radMenu1 = new Telerik.WinControls.UI.RadMenu();
-            this.radMenuItem8 = new Telerik.WinControls.UI.RadMenuItem();
             this.tableLayoutPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.radPageView1)).BeginInit();
             this.radPageView1.SuspendLayout();
@@ -573,6 +573,12 @@
             this.radMenuSeparatorItem1.Text = "radMenuSeparatorItem1";
             this.radMenuSeparatorItem1.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
             // 
+            // radMenuItem8
+            // 
+            this.radMenuItem8.Name = "radMenuItem8";
+            this.radMenuItem8.Text = "Открыть 3D";
+            this.radMenuItem8.Click += new System.EventHandler(this.radMenuItem8_Click);
+            // 
             // radMenuItem3
             // 
             this.radMenuItem3.Items.AddRange(new Telerik.WinControls.RadItem[] {
@@ -681,12 +687,6 @@
             this.radMenu1.Size = new System.Drawing.Size(963, 20);
             this.radMenu1.TabIndex = 3;
             this.radMenu1.Text = "radMenu1";
-            // 
-            // radMenuItem8
-            // 
-            this.radMenuItem8.Name = "radMenuItem8";
-            this.radMenuItem8.Text = "Открыть 3D";
-            this.radMenuItem8.Click += new System.EventHandler(this.radMenuItem8_Click);
             // 
             // Form2
             // 
